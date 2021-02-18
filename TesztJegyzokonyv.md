@@ -148,3 +148,104 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 - Technikai, a teszt forgatókönyvben leírtak szerint.
 - A projekt menedzser jóváhagyása a teszt leszállítandókra
 
+## 5 Tesztjegyzőkönyv
+### 5.1 Tesztelési jegyzőkönyv - 1. 
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | GUI, megfelelő megjelenítés |
+| A tesztelt folyamat/funkció leírása:  |  Menü  |
+| A tesztelés előfeltételei:  | - |
+| A tesztelés dátuma és időpontja:  | 2021.05.12. |
+| A tesztadatok típusa:  | Megfelel/Nem felel meg |
+| A tesztet végző személy(ek):  | Kuborcik Ádám  |
+| A tesztelt rendszer beállításai:  | Standard |
+| A teszt-eset elvárt eredménye:  | Sikeres |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | A menüpontok a tervezettként funkcionálnak, minden végzi a dolgát, hibát nem fedeztem fel. |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Donkó Róbert Márk |
+|  Szervezeti egység/ beosztás: | Designer |
+|  Dátum: | 2021.05.13. |
+
+### 5.2 Tesztelési jegyzőkönyv - 2. 
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  |  Hibák felülvizsgálata |
+| A tesztelt folyamat/funkció leírása:  |  |
+| A tesztelés előfeltételei:  | - |
+| A tesztelés dátuma és időpontja:  | 2021.05.12 |
+| A tesztadatok típusa:  | Megfelel/Nem felel meg |
+| A tesztet végző személy(ek):  | Kuborcik Ádám |
+| A tesztelt rendszer beállításai:  | Standard |
+| A teszt-eset elvárt eredménye:  | Sikeres |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek. Néha 1-1 blokkba beleakad a játékos, de ez nem befolyásolja a játékélményt. Az enemy-k megfelelően mozognak, ha hozzáér a játékos, game over, ha ráugrik megöli. a powerupok a szerepüket betöltik. |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: | Kuborcik Ádám |
+|  Szervezeti egység/ beosztás: | Designer |
+|  Dátum: | 2021.05.13. |
+
+### 5.3 Tesztelési jegyzőkönyv - 3.
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | Login teszt |
+| A tesztelt folyamat/funkció leírása:  |  |
+| A tesztelés előfeltételei:  |  -  |
+| A tesztelés dátuma és időpontja:  | 2021.05.12 |
+| A tesztadatok típusa:  | Megfelel/Nem felel meg |
+| A tesztet végző személy(ek):  | Donkó Róbert Márk  |
+| A tesztelt rendszer beállításai:  | Standard  |
+| A teszt-eset elvárt eredménye:  | Sikeres  |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek.  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Donkó Róbert Márk |
+|  Szervezeti egység/ beosztás: |  |
+|  Dátum: |  2021.05.12  |
+
+### 5.4 Tesztelési jegyzőkönyv - 4. 
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | CRUD műveletek  |
+| A tesztelt folyamat/funkció leírása:  |  |
+| A tesztelés előfeltételei:  |  -  |
+| A tesztelés dátuma és időpontja:  | 2021.05.12 |
+| A tesztadatok típusa:  | Megfelel/Nem felel meg |
+| A tesztet végző személy(ek):  | Donkó Róbert Márk  |
+| A tesztelt rendszer beállításai:  | Standard  |
+| A teszt-eset elvárt eredménye:  | Sikeres  |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek.  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Komjati Evelin |
+|  Szervezeti egység/ beosztás: |   |
+|  Dátum: |  2021.01.06 13:58  |
+
+### 5.5 Jóváhagyások
+
+|   |   |
+|---|---|
+|  Név: |  Donkó Róbert Márk |
+|  Szervezeti egység/ beosztás: |   |
+|  Dátum: |  2021.05.12  |
+
