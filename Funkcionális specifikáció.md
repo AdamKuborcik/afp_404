@@ -6,3 +6,15 @@ Az alkalmazásunk egy projektmunka keretein belül készült. Egy "könyvespolc"
 ## Jelenlegi helyzet
 A szükség, ami ösztönzött minket hogy implementáljuk ezt a webes alkalmazást a felhasználók változó és újuló igényei. Mivel ezen a területen relatív üres a piac, így ez egy remek lehetőség. Nem beszélve arról, hogy a versengés aspektus miatt az embereket tudjuk ösztönözni az olvasásra.
 
+## Követelménylista
+|    Modul    | ID |       Név          |                                                        Kifejtés                                                |
+|-------------|----|--------------------|----------------------------------------------------------------------------------------------------------------|
+| Jogosultság | I1 | Belépési felület   | A felhaszáló ha rendelkezik már fiókkal akkor bejelentkezhet, ellenkező esetben regisztrációra van lehetősége. |
+|   Felület   | I2 | Könyv hozzáadás    | Főmenü pont, a felhasználó itt tud könyveket hozzáadni.                                                        |
+|   Felület   | I3 | Könyv módosítás    | Főmenü pont, a felhasználó itt tud könyveket módosítani.                                                       |
+|   Felület   | I4 | Profil módosítás   | Főmenü pont, a felhasználó itt tudja az adatait módosítani, illetve a profilt publikusra állítani.             |
+|   Felület   | I5 | Profil megtekintés | Főmenü pont, a felhasználó itt tudja a saját, illetve más felhasználó profilját megtekinteni.                  |
+|   Felület   | I6 | Kilépés            | Főmenü pont, a felhasználó itt tud kijelentkezni                                                               |
+| Statisztika | I7 | Adatbázis          | Itt tároljuk a felhasználók adatait, előrehaladásukat.                                                         |
+
+
