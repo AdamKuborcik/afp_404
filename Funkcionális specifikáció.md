@@ -17,4 +17,7 @@ A szükség, ami ösztönzött minket hogy implementáljuk ezt a webes alkalmaz�
 |   Felület   | I6 | Kilépés            | Főmenü pont, a felhasználó itt tud kijelentkezni                                                               |
 | Statisztika | I7 | Adatbázis          | Itt tároljuk a felhasználók adatait, előrehaladásukat.                                                         |
 
+## Jelenlegi üzleti folyamatok modellje
+Az technológia előrehaladtával az olvasás egyre kisebb figyelmet kap a világban. Ezen a téren hatalmas űr van a piacon. Fő célunk az olvasást és a technológiát összekapcsolva népszerűsítsük az olvasást.
+
 
