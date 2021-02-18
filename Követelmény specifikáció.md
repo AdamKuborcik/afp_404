@@ -76,7 +76,7 @@ Jelen Felhasználási Feltételekben nem szabályozott kérdésekben a hatályos
 
 ### Kapcsolat
 
-Az Alkalmazás támogatását az Üzemeltető végzi munkanapokon, 9:00 és 17:00 között. Az Alkalmazás működésével kapcsolatban a Felhasználó czafikm97@gmail.com e-mail címre küldheti kérdéseit, amelyre az Üzemeltető a fenti időszakban válaszol.
+Az Alkalmazás támogatását az Üzemeltető végzi munkanapokon, 9:00 és 17:00 között. Az Alkalmazás működésével kapcsolatban a Felhasználó _404@gmail.com e-mail címre küldheti kérdéseit, amelyre az Üzemeltető a fenti időszakban válaszol.
 
 
 ## Jelenlegi üzleti folyamatok
