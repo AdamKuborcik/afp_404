@@ -20,4 +20,5 @@ A szükség, ami ösztönzött minket hogy implementáljuk ezt a webes alkalmaz�
 ## Jelenlegi üzleti folyamatok modellje
 Az technológia előrehaladtával az olvasás egyre kisebb figyelmet kap a világban. Ezen a téren hatalmas űr van a piacon. Fő célunk az olvasást és a technológiát összekapcsolva népszerűsítsük az olvasást.
 
-
+## Igényelt üzleti folyamatok modellje
+Az emberek igénye a versengés iránt mindig is magas volt. Fő célunk,hogy ezt a hajlamot kihasználva népszerűsítsük az olvasást. Az szeretik összemérni eredményeiket és ezzel akár tudjuk őket ösztönözni az olvasásra. Egy felhasználóbarát webes alkalmazás elkészítése a cél. Kevés manapság az olyan alkalmazás, ami összeköti az olvasást és a rendelkezésre álló eszközöket.
