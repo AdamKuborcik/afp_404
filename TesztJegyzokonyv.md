@@ -118,3 +118,33 @@ A tesztelési feladat a következő teszt-eseteket foglalja magában:
 - Fejlesztői teszt
 - Prototípus (modul)
 
+## 4 Tesztelési ütemterv, függőségek – tesztforgatókönyv
+### 4.1 Tesztelési jegyzőkönyv
+A tesztelők a tesztforgatókönyvnek megfelelően elvégzik a tesztelést és az eredményt tesztjegyzőkönyvekben dokumentálják. A teszt kimenetelést minden esetben jelenteni kell a tesztkoordinátornak. A tesztkoordinátor a szakértőkkel együtt megoldást keres a problémákra, majd frissíti a tesztforgatókönyvet. Ha a problémát megoldották, a tesztelő újrakezdheti a tesztelést, majd dokumentálja az eredményeket. Ha a hiba továbbra is fennáll, és harmadik félen múlik a megoldása eszkalálni kell a problémát a projekt menedzsernek. 
+
+### 4.2 Tesztelési jelentés
+A tesztelési jelentést a tesztkoordinátor készíti el. Ez egy részletes áttekintése a lefutott teszteknek, azok eredményeinek, státuszának és a megjegyzéseknek.
+A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést. 
+
+### 4.3 Tesztelt elvárások 
+Az alábbi funkcionális elvárások szerepelnek az üzleti illetve fejlesztői specifikációban, amelyek tesztelésre is kerültek: 
+> A dokumentum átdolgozás alatt (Hiányzó tesztelési elvárás a üzleti illetve fejlesztői specifikációban).
+
+| #  | Leírás |
+|---|---|
+| 1. | Login |
+| 2. | CRUD műveletek |
+
+Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejlesztői specifikációban, amelyek tesztelésre is kerültek: 
+
+| #  | Leírás |
+|---|---|
+| 1. | Felhasználóbarát felület |
+| 2. | Gyors működés |
+| 3. | Optimalizált |
+| 4. | Megbízható |
+
+### 4.4 Elfogadási kritériumok
+- Technikai, a teszt forgatókönyvben leírtak szerint.
+- A projekt menedzser jóváhagyása a teszt leszállítandókra
+
