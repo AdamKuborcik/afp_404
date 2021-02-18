@@ -1,48 +1,39 @@
 # Funkcionális specifikáció
 
 ## Áttekintés
-Az alkalmazásunk szórakozás céljából készül. Játékunk ingyenes, bárki számára elérhető. Rendelkezik egy menüvel, amelyben nevet valamint karaktert és pályát választhatunk. Az ábrázolás úgynevezett 8bites ábrázolás, azaz pixeles, ezzel egyfajta retro érzést kapunk, mégis a játék maga gördülékeny. A karaktereket saját magunk hoztuk létre, ugyanúgy, mint a pályákat. Adatbázisban tároljuk a szerzett pontokat, amelyek a pályán való haladás és az összegyűjtött szimbólumok alapján adódik össze. Ezeket a játék végén megjelenítjük egy táblázatban a játékos neve mellett, a többi játékos pontjaival csökkenő sorrendbe rendezve amolyan toplistás rendezésben. Ez lehetővé teszi a többi játékosokhoz való összehasonlítást, versengést.
+Az alkalmazásunk egy projektmunka keretein belül készült. Egy "könyvespolc" webes felületét hivatott reprezentálni. Rendelkezik egy regisztrációs/bejelentkezési felülettel. Bejelentkezés után lehetőségünk van böngészni a könyveink között, hozzáadni, valamint megjelölni hol tartunk egy adott könyvben. Adatbázisban tároljuk a felhasználókat, könyveket és az ezzel kapcsolatos adatokat is. Profilunkat publikusra is állíthatjuk, ezáltal más felhasználók is láthatják. Ez lehetővé teszi a felhasználóknak a versengést.
 
 ## Jelenlegi helyzet
-A szükség, ami ösztönzött minket hogy implementáljuk ezt az alkalmazást a felhasználók változó és újuló igényei. Nem ragadhatunk le ugyanazoknál a játékoknál, kell hogy legyenek benne újítások,hogy fenntartsuk az érdeklődésüket és ne legyen romló véleményük.
+A szükség, ami ösztönzött minket hogy implementáljuk ezt a reszponzív felületes webes alkalmazást a felhasználók változó és újuló igényei. Mivel ezen a területen relatív üres a piac, így ez egy remek lehetőség. Nem beszélve arról, hogy a versengés aspektus miatt az embereket tudjuk ösztönözni az olvasásra.
 
 ## Követelménylista
-|    Modul    | ID |       Név        |                                                        Kifejtés                                                        |
-|-------------|----|------------------|------------------------------------------------------------------------------------------------------------------------|
-| Jogosultság | I1 | Belépési felület | A felhaszáló megadja a játékosnevét. Ha létezik, egy menü fogadja, ha nem, indul a játék automatikusan.                |
-|   Felület   | I2 | Pályaválasztás   | Főmenü pont, a játékos később innen tudja kiválasztani a következő pályát, vagy újrajátszani előzőt egy jobb időért.   |
-|   Felület   | I3 | Karakterválasztás| Főmenü pont, a játékos 2 karakter közül választhat számára megfelelőt.                                                 |
-|   Felület   | I4 | Kilépés          | Főmenü pont, a játékos kiléphet.                                                                                       |
-|   Felület   | I5 | Beállítások      | Főmenü pont, a játékos állíthatja a hangerőt.                                                                          |
-| Statisztika | I6 | Toplista         | A játékosok idejét, és pontszámát egy toplistán jelenítjük meg a szint teljesítése után.                               |
-| Statisztika | I7 | Adatbázis        | Itt tároljuk a játékos nevét, előrehaladását, pontszámát és idejét.                                                    |
-|   Feature   | I8 | Időszámláló      | Az időzítő egyből a pálya megkezdése után elindul, teljesítés után leáll.                                              |
+|    Modul    | ID |       Név          |                                                        Kifejtés                                                |
+|-------------|----|--------------------|----------------------------------------------------------------------------------------------------------------|
+| Jogosultság | I1 | Belépési felület   | A felhaszáló ha rendelkezik már fiókkal akkor bejelentkezhet, ellenkező esetben regisztrációra van lehetősége. |
+|   Felület   | I2 | Könyv hozzáadás    | Főmenü pont, a felhasználó itt tud könyveket hozzáadni.                                                        |
+|   Felület   | I3 | Könyv módosítás    | Főmenü pont, a felhasználó itt tud könyveket módosítani.                                                       |
+|   Felület   | I4 | Profil módosítás   | Főmenü pont, a felhasználó itt tudja az adatait módosítani, illetve a profilt publikusra állítani.             |
+|   Felület   | I5 | Profil megtekintés | Főmenü pont, a felhasználó itt tudja a saját, illetve más felhasználó profilját megtekinteni.                  |
+|   Felület   | I6 | Kilépés            | Főmenü pont, a felhasználó itt tud kijelentkezni                                                               |
+| Statisztika | I7 | Adatbázis          | Itt tároljuk a felhasználók adatait, előrehaladásukat.                                                         |
 
 ## Jelenlegi üzleti folyamatok modellje
-Az idő előrehaladtával a játékok egyre nagyobb figyelmet kapnak a világban. Hatalmas ipar épül köré, meg lehet belőle élni streamerkedés által, akár hivatásos játékos is lehetsz egy nagyobb esport csapatban. Csak Magyarországon, közel 4 millió ember játszik valamiféle játékkal. A technológia előrehaladtával az érdeklősés is egyre nagyobb lesz. Fő célunk egy játék fejlesztése, amivel a játékosokat szórakoztatjuk.
+Az technológia előrehaladtával az olvasás egyre kisebb figyelmet kap a világban. Ezen a téren hatalmas űr van a piacon. Fő célunk az olvasást és a technológiát összekapcsolva népszerűsítsük az olvasást.
 
 ## Igényelt üzleti folyamatok modellje
-Az emberek igénye a videójátékok iránt mindig is magas volt. Fő célunk hogy ezeket a személyeket szórakoztassuk. A játékosok szeretik összemérni tudásukat, és egy hosszú nap után kicsit kikapcsolni. Egy felhasználóbarát egyszerű retro játék elkészítése a cél, ami standard időtöltést és kihívást nyújthat a játékosoknak. Kevés manapság a régibb típusú játék, főleg azoknak az embereknek készült, akik kicsit visszamennének az időben, mikor még nem volt se lootbox, se kozmetika, se ranked, se balance probléma, csak a kész játék és a játékos.
+Az emberek igénye a versengés iránt mindig is magas volt. Fő célunk,hogy ezt a hajlamot kihasználva népszerűsítsük az olvasást. Az szeretik összemérni eredményeiket és ezzel akár tudjuk őket ösztönözni az olvasásra. Egy felhasználóbarát webes alkalmazás elkészítése a cél. Kevés manapság az olyan alkalmazás, ami összeköti az olvasást és a rendelkezésre álló eszközöket.
 
 ## Használati esetek
-A játékos jogosult a játék elindítására, minden beépített funkció használatára. Megtekintheti a toplistát, választhat pályát, személyre szabhatja a beállításokat.
+A felhasználó jogosult regisztrálni, bejelentkezni, könyveket hozzáadni és módosítani. Profilt módosítani és megtekinteni valamint profilt törölni.
 
 ## A rendszer funkciói
-- Mentés: Elmenti a játékos eddig eleért ederményeit az adatbázisba. 
-- Betöltés: Betölti a játékos eddigi eredményeit az adatbázisba.
-- Beállítások: A játékos könyedén beállíthatja a hangot.
+- Mentés: Elmenti a felhasználó adatait az adatbázisba. 
+- Betöltés: Betölti a felhasználó adatait, előrehaladását az adatbázisból.
 
 ## Fogalomtár 
 - Reszponzív felület: Mindig igazodik a felület a képerányhoz.
-- Beállítások: Itt lesz lehetőség a zene hangját állítani. 
-- Pálya választó: Itt lesz lehetőség a már fel oldott pályák végig vitelére.
-- Fel oldott pályák: egy pálya akkor lesz "feloldva" ha az elötte lévő szintet sikeresen meg csináltuk
-- Karakter választó: A felhasználónak lehetősége lesz 2 karakter között választani. 
-- Ellenfelek: Mozgó ellemek amiket ellkell kerülni azért vannak a játékban hogy nehezítsék a játékot .
-- Csapdák: Statikus ellenfelek akik nem mozognak fix pozícióban vannak.  
 
 ## Funkció-Követelmény megfeleltetés
-- **Modifikáció:** *-név:* A felhasználó saját profiljába belépve képes lesz folytatni az elkezdett játékot.
-- **Feladattípus:** *-pályák:* A felhasználónak pályákat kell teljesítenie, aminek az eredményeit adatbázisban fogunk tárolni.
-- **Statisztika:** *-toplista:* Külön felület, amin a felhasználó láthatja az eddig elért eredményeket.
+- **Modifikáció:** *-név:* A felhasználó saját profiljába belépve képes lesz módosítani az adatait.
+- **Statisztika:** *-könyvek:* Külön felület, amin a felhasználó láthatja az eddig elért eredményeket.
 - **Felület:** *-menü:* Menüpontok, ahol a felhasználó választhat .
