@@ -249,3 +249,85 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 |  Szervezeti egység/ beosztás: |   |
 |  Dátum: |  2021.05.12  |
 
+## 6 Tesztelési jelentés 
+
+### 6.1 Tesztelési jelentés -  1.  
+|   |   |
+|---|---|
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | GUI, megfelelő megjelenítés |
+| A tesztelt folyamatok/funkciók/modulok leírása: |  Menü |
+| A tesztadatok típusa:  | Megfelel/Nem felel meg |
+| A tesztelt rendszer beállításai:  | Standard  |
+| A tesztelés eredménye:  | **élesíthető**  |
+| Megjegyzések:  | A menüpontok a tervezettként funkcionálnak, minden végzi a dolgát, hibát nem fedeztem fel. |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: | Erdélyi Roland  |
+|  Szervezeti egység/ beosztás: |   |
+|  Dátum: |  2021.01.06 12:15  |
+
+### 6.2 Tesztelési jelentés - 2. 
+|   |   |
+|---|---|
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  |  hibák felülvizsgálata |
+| A tesztelt folyamatok/funkciók/modulok leírása: |  Enemies, powerups, movement |
+| A tesztadatok típusa:  |  Megfelel/Nem felel meg |
+| A tesztelt rendszer beállításai:  | Standard |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek.|
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Komjati Evelin |
+|  Szervezeti egység/ beosztás: | Designer  |
+|  Dátum: |  2021.01.06 12:15  |
+
+
+### 6.3 Tesztelési jelentés - 3. 
+|   |   |
+|---|---|
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | Login teszt |
+| A tesztelt folyamatok/funkciók/modulok leírása: |  Login teszt|
+| A tesztadatok típusa:  | Megfelel/Nem felel meg  |
+| A tesztelt rendszer beállításai:  | Standard  |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek.  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Donkó Róbert Márk |
+|  Szervezeti egység/ beosztás: |   |
+|  Dátum: |  2021.01.06 13:58  |
+
+### 6.4 Tesztelési jelentés - 4. 
+|   |   |
+|---|---|
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | CRUD műveletek |
+| A tesztelt folyamatok/funkciók/modulok leírása: |  CRUD műveletek |
+| A tesztadatok típusa:  | Megfelel/Nem felel meg  |
+| A tesztelt rendszer beállításai:  | Standard  |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek.   |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Kuborcik Ádám  |
+|  Szervezeti egység/ beosztás: |   |
+|  Dátum: |  2021.01.06 13:58  |
+
+### 7 Jóváhagyások
+
+|   |   |
+|---|---|
+|  Név: |  Donkó Róbert Márk |
+|  Szervezeti egység/ beosztás: |   |
+|  Dátum: |  2021.05.07 11:00  |
