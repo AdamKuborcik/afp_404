@@ -22,3 +22,6 @@ Az technológia előrehaladtával az olvasás egyre kisebb figyelmet kap a vilá
 
 ## Igényelt üzleti folyamatok modellje
 Az emberek igénye a versengés iránt mindig is magas volt. Fő célunk,hogy ezt a hajlamot kihasználva népszerűsítsük az olvasást. Az szeretik összemérni eredményeiket és ezzel akár tudjuk őket ösztönözni az olvasásra. Egy felhasználóbarát webes alkalmazás elkészítése a cél. Kevés manapság az olyan alkalmazás, ami összeköti az olvasást és a rendelkezésre álló eszközöket.
+
+## Használati esetek
+A felhasználó jogosult regisztrálni, bejelentkezni, könyveket hozzáadni és módosítani. Profilt módosítani és megtekinteni valamint profilt törölni.
