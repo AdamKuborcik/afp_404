@@ -39,6 +39,7 @@ Menüpontok:
 
 A kilépés menüpontot választva, a felhasználó kijelentkezik.
 
+
 ## Rendszerre vonatkozó törvények
 
 
@@ -68,7 +69,6 @@ Az Alkalmazáshoz kapcsolódó adatbázis módosítása kizárólag az Üzemelte
 
 Ha a Felhasználó az Alkalmazást használat közben bezárja, vagy ha a kapcsolat (bármely okból) megszakad a kiszolgáló webhelyével, abban az esetben az adatok elvesztéséért a Tulajdonos semmilyen felelősséget nem vállal. A Tulajdonos és az Üzemeltető a rendelkezésére álló eszközökkel biztosítja, hogy az Alkalmazás használata technikai szempontból biztonságosnak minősüljön. Az Alkalmazáshoz való csatlakozás miatt bekövetkező károkért, az internetes hálózat esetleges üzemkimaradásából, az elérési út hibájából, bármely nem várt technikai hibából eredő adatvesztésért, vírusból, vagy más károkért a Tulajdonos nem felelős. A Felhasználóknak minden esetben fel kell mérniük, hogy rendelkeznek-e az Alkalmazás használatához szükséges ismeretekkel, technikai követelményekkel és teljesítményekkel.
 
-
 ### Egyéb rendelkezések
 
 Jelen Felhasználási Feltételekben nem szabályozott kérdésekben a hatályos jogszabályok – különösen, de nem kizárólagosan a Polgári Törvénykönyvről szóló 2013. évi V. törvény, az Európai Parlament és Tanács 2016. április 27-i (EU) 2016/679 Rendelete a természetes személyeknek a személyes adatok kezelése tekintetében történő védelméről és az ilyen adatok szabad áramlásáról, valamint a 95/46/EK irányelv hatályon kívül helyezéséről, az információs önrendelkezési jogról és az információ szabadságról szóló 2011. évi CXII. törvény, a szerzői jogról szóló 1999. évi LXXVI. törvény, valamint az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről szóló 2001. évi CVIII. törvény – rendelkezései az irányadóak.
@@ -91,6 +91,7 @@ Az alkalmazásban bejelentkzés után egyszerűen és átláthatóan lehet új k
 illetve eltávolítani belőle.
 A keresés menüpont segítségével pedig különböző szempontok alapján lehet keresni címre, szerzőre és műfajra is.
 
+
 ## Követelménylista
 |    Modul    | ID |       Név        |                                                        Kifejtés                                                        |
 |-------------|----|------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -101,6 +102,7 @@ A keresés menüpont segítségével pedig különböző szempontok alapján leh
 |   Felület   | I5 | Módosítás        | Főmenü pont, a könyv leírásának módosítása.                                                                            |
 |   Felület   | I6 | Keresés          | Fő menüpont, különböző szempontok (cím, szerző, műfaj) alapján lehet szűrni a könyveket                                |
 |   Felület   | I7 | Kilépés          | Fő menüpont, a felhasználó kijelentkeztetése, visszatér a bejelentkező felülethez                                      |
+
 
 
 ## Fogalomtár 
