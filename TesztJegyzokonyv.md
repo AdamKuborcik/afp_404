@@ -6,9 +6,9 @@
 |---|:-:|
 | **Minősítés: (állapot)**  |  Jóváhagyott |
 | **Verziószám:**  |  ALFA 0.1 |
-| **Projekt név:** |   |
-| **Készítette:** |  |
-| **Utolsó mentés kelte:** | 2020.04.23 |
+| **Projekt név:** | 404 könyvtár |
+| **Készítette:** | _404 |
+| **Utolsó mentés kelte:** | 2021.04.23 |
 | **Dokumentum célja:** | A projekt aktualis állapotának bemutatása   |
 | **Fájlnév** | test.md |
 
@@ -16,10 +16,10 @@
 
 |  Név | Szerepkör |
 |---|:-:|
-|  | Designer |
-|  | Designer |
-|  |  |
-| Donkó Róbert Márk |   |
+| Erdélyi Roland | Adatbázis fejlesző |
+| Komjati Evelin | Frontend fejlesző |
+| Kuborcik Ádám | Backend fejlesző |
+| Donkó Róbert Márk | Tesztelő |
 
 ## 1. Bevezetés
 Tesztelés célja a projektben megtalálható struktúrális és design hibák feltárása.
@@ -32,28 +32,28 @@ Tesztelés célja a projektben megtalálható struktúrális és design hibák f
 ### 1.2 Elvárások
 #### Az alábbi alap elvárások képezik ennek a teszttervnek az alapját:
 - Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert. 
-- Az **team1** projektcsapat felelős a tesztadatok előállításáért.
+- Az **_404** projektcsapat felelős a tesztadatok előállításáért.
 
 ## 2 Szükséges erőforrások
-- Windows alapú rendszer
-- src mappa csatolása
+- Böngésző
+- Webserver
 
 ### 2.1 Feladatkörök és felelősségek (tesztcsapat meghatározása)
 | Feladatkör  |  Felelősség/tevékenység |  Személy  |
 |---|---|---|
-|  **Tesztelő, Teszt-koordinátor:** |  A teszt végrehajtása, észrevételek dokumentálása, teszt dokumentáció archiválása.Teszt terv készítése.  A tesztterv jóváhagyatása a projektmenedzserrel.  Teszt forgatókönyvek létrehozása  Inkonzisztenciák kezelése.  Helyes és időbeni hibakezelés.  Szükség esetén problémák eszkalálása a projekt menedzsernek.  Végső riport készítése.  Teszt dokumentum archiválása.  Az észrevételek státuszának követése, ill. dokumentálása | név  |
-| **Szakértő:**  |  A szakértő az észrevételek elemzi és megoldást javasol. | név |
-|**Projektvezető:**| Teszt terv jóváhagyása  Teszt forgatókönyv (testscript)| név |
+|  **Tesztelő, Teszt-koordinátor:** |  A teszt végrehajtása, észrevételek dokumentálása, teszt dokumentáció archiválása.Teszt terv készítése.  A tesztterv jóváhagyatása a projektmenedzserrel.  Teszt forgatókönyvek létrehozása  Inkonzisztenciák kezelése.  Helyes és időbeni hibakezelés.  Szükség esetén problémák eszkalálása a projekt menedzsernek.  Végső riport készítése.  Teszt dokumentum archiválása.  Az észrevételek státuszának követése, ill. dokumentálása | Erdélyi Roland  |
+| **Szakértő:**  |  A szakértő az észrevételek elemzi és megoldást javasol. | Kuborcik Ádám |
+|**Projektvezető:**| Teszt terv jóváhagyása  Teszt forgatókönyv (testscript)| Donkó Róbert Márk |
 
 ### 2.2 Tesztkörnyezet
 | Környezet neve és feladata  |  A hozzáférés módja | Konfiguráció  |
 |---|---|---|
 | Intellij idea | Offline - Szabad szoftver | Windows 10 - alapértemezett beállítások |
-| MYSQL workbench  | Offline - Szabad szoftver | Windows 10 - alapértemezett beállítások |
+| MongoDB  | Offline - Szabad szoftver | Windows 10 - alapértemezett beállítások |
 
 ### 2.3 Tesztadatok
 A teszt végrehajtásához szükséges rekordok (tesztadatok) száma: 3
-A tesztadatok elkészítéséért és feltöltéséért felelős személy: név
+A tesztadatok elkészítéséért és feltöltéséért felelős személy: Donkó Róbert Márk
 
 A tesztadatoknak az alábbi követelményeknek kell megfelelniük:
 - Az adatbázisba felvitt adatoknak csak is az UTF-8 kódtáblában található karaktereket szabad tartalmaznia.
@@ -63,24 +63,19 @@ Az összes teszt dokumentáció és leszállítandó a következő helyen érhet
 
 | Cím  |  Felelős személy | Szállítási gyakorisága  | Szállítás módja |
 |---|---|---|---|
-|  **GUI teszt - IDL** |  név |  Egyszeri |  github repository |
-|  **SQL teszt** | név  |  Egyszeri | github repository  |
+|  **GUI teszt - IDL** |  Kuborcik Ádám |  Egyszeri |  github repository |
+|  **MongoDB teszt** | Komjati Evelin  |  Egyszeri | github repository  |
 
 ### 2.5 Tesztelési eszközök
 - Intellij idea *Fejlesztői környezet* [LINK](https://www.jetbrains.com/idea/)
-- Mysql workbench *mysql workbench* [LINK](https://www.mysql.com/products/workbench/)
+- MongoDB *MongoDB* [LINK](https://www.mongodb.com/)
 
 ## 3 Tesztelési terv
 Fejezeteket teszteltünk, csakis akkor töltöttük fel a programkódot ha az megfelelt az elvárt követelményeknek, és a lehető legkevesebb bugot tartalmazta/nem is tartalmazott.
 **Tesztelés lépcsői:**
-- Graphics and BufferStrategies
-- Handler
-- Movement, collision, jumping
-- Sprites and SpriteSheets
-- Animation
-- Camera
-- Level design
-- Powerup, Enemies, Coins, Mini Boss
+- CRUD műveleteknek
+- Bejelenkezési biztonségnak
+- Adatvédelmi követelményeknek
 
 ### 3.1 Fejlesztői teszt
 A fejlesztői tesztelés célja a rendszer alapvető funkcióinak ellenőrzése, a hibakezelés és az alapvető funkciók működésének vizsgálata
@@ -137,9 +132,8 @@ Az alábbi funkcionális elvárások szerepelnek az üzleti illetve fejlesztői 
 
 | #  | Leírás |
 |---|---|
-| 1. | GUI |
-| 2. | Gameplay |
-| 3. | Design |
+| 1. | Login |
+| 2. | CRUD műveletek |
 
 Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejlesztői specifikációban, amelyek tesztelésre is kerültek: 
 
@@ -160,11 +154,11 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 |   |   |
 |---|---|
 | A teszt-eset leírás és célja:  | GUI, megfelelő megjelenítés |
-| A tesztelt folyamat/funkció leírása:  |  Menü, ingame  |
+| A tesztelt folyamat/funkció leírása:  |  Menü  |
 | A tesztelés előfeltételei:  | - |
-| A tesztelés dátuma és időpontja:  | 2020.05.12. |
+| A tesztelés dátuma és időpontja:  | 2021.05.12. |
 | A tesztadatok típusa:  | Megfelel/Nem felel meg |
-| A tesztet végző személy(ek):  |  |
+| A tesztet végző személy(ek):  | Kuborcik Ádám  |
 | A tesztelt rendszer beállításai:  | Standard |
 | A teszt-eset elvárt eredménye:  | Sikeres |
 | A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
@@ -174,20 +168,20 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 
 |   |   |
 |---|---|
-|  Név: |  |
+|  Név: |  Donkó Róbert Márk |
 |  Szervezeti egység/ beosztás: | Designer |
-|  Dátum: | 2020.05.13. |
+|  Dátum: | 2021.05.13. |
 
 ### 5.2 Tesztelési jegyzőkönyv - 2. 
 
 |   |   |
 |---|---|
-| A teszt-eset leírás és célja:  | Gameplay, hibák felülvizsgálata |
-| A tesztelt folyamat/funkció leírása:  | Enemies, powerups, movement |
+| A teszt-eset leírás és célja:  |  Hibák felülvizsgálata |
+| A tesztelt folyamat/funkció leírása:  |  |
 | A tesztelés előfeltételei:  | - |
-| A tesztelés dátuma és időpontja:  | 2020.05.12 |
+| A tesztelés dátuma és időpontja:  | 2021.05.12 |
 | A tesztadatok típusa:  | Megfelel/Nem felel meg |
-| A tesztet végző személy(ek):  |  |
+| A tesztet végző személy(ek):  | Kuborcik Ádám |
 | A tesztelt rendszer beállításai:  | Standard |
 | A teszt-eset elvárt eredménye:  | Sikeres |
 | A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
@@ -197,18 +191,18 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 
 |   |   |
 |---|---|
-|  Név: |  |
+|  Név: | Kuborcik Ádám |
 |  Szervezeti egység/ beosztás: | Designer |
-|  Dátum: | 2020.05.13. |
+|  Dátum: | 2021.05.13. |
 
 ### 5.3 Tesztelési jegyzőkönyv - 3.
 
 |   |   |
 |---|---|
-| A teszt-eset leírás és célja:  | Zene , Hang teszt |
-| A tesztelt folyamat/funkció leírása:  | Zene , hang |
+| A teszt-eset leírás és célja:  | Login teszt |
+| A tesztelt folyamat/funkció leírása:  |  |
 | A tesztelés előfeltételei:  |  -  |
-| A tesztelés dátuma és időpontja:  | 2020.05.12 |
+| A tesztelés dátuma és időpontja:  | 2021.05.12 |
 | A tesztadatok típusa:  | Megfelel/Nem felel meg |
 | A tesztet végző személy(ek):  | Donkó Róbert Márk  |
 | A tesztelt rendszer beállításai:  | Standard  |
@@ -222,38 +216,38 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 |---|---|
 |  Név: |  Donkó Róbert Márk |
 |  Szervezeti egység/ beosztás: |  |
-|  Dátum: |  2020.05.12  |
+|  Dátum: |  2021.05.12  |
 
 ### 5.4 Tesztelési jegyzőkönyv - 4. 
 
 |   |   |
 |---|---|
-| A teszt-eset leírás és célja:  |   |
-| A tesztelt folyamat/funkció leírása:  | |
-| A tesztelés előfeltételei:  |    |
-| A tesztelés dátuma és időpontja:  |   |
-| A tesztadatok típusa:  |  |
-| A tesztet végző személy(ek):  | név  |
-| A tesztelt rendszer beállításai:  |   |
-| A teszt-eset elvárt eredménye:  |   |
+| A teszt-eset leírás és célja:  | CRUD műveletek  |
+| A tesztelt folyamat/funkció leírása:  |  |
+| A tesztelés előfeltételei:  |  -  |
+| A tesztelés dátuma és időpontja:  | 2021.05.12 |
+| A tesztadatok típusa:  | Megfelel/Nem felel meg |
+| A tesztet végző személy(ek):  | Donkó Róbert Márk  |
+| A tesztelt rendszer beállításai:  | Standard  |
+| A teszt-eset elvárt eredménye:  | Sikeres  |
 | A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
-| Megjegyzések:  | -  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek.  |
 
 **Tesztelést elvégezte**
 
 |   |   |
 |---|---|
-|  Név: |  név |
+|  Név: |  Komjati Evelin |
 |  Szervezeti egység/ beosztás: |   |
-|  Dátum: |  2020.01.06 13:58  |
+|  Dátum: |  2021.01.06 13:58  |
 
 ### 5.5 Jóváhagyások
 
 |   |   |
 |---|---|
-|  Név: |   |
+|  Név: |  Donkó Róbert Márk |
 |  Szervezeti egység/ beosztás: |   |
-|  Dátum: |    |
+|  Dátum: |  2021.05.12  |
 
 ## 6 Tesztelési jelentés 
 
@@ -261,7 +255,7 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 |   |   |
 |---|---|
 | A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | GUI, megfelelő megjelenítés |
-| A tesztelt folyamatok/funkciók/modulok leírása: |  Menü, ingame |
+| A tesztelt folyamatok/funkciók/modulok leírása: |  Menü |
 | A tesztadatok típusa:  | Megfelel/Nem felel meg |
 | A tesztelt rendszer beállításai:  | Standard  |
 | A tesztelés eredménye:  | **élesíthető**  |
@@ -271,38 +265,34 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 
 |   |   |
 |---|---|
-|  Név: |   |
+|  Név: | Erdélyi Roland  |
 |  Szervezeti egység/ beosztás: |   |
-|  Dátum: |  2020.01.06 12:15  |
-|   |   |
-|  Név: |   |
-|  Szervezeti egység/ beosztás: |   |
-|  Dátum: |  2020.01.06 14:36  |
+|  Dátum: |  2021.01.06 12:15  |
 
 ### 6.2 Tesztelési jelentés - 2. 
 |   |   |
 |---|---|
-| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | Gameplay, hibák felülvizsgálata |
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  |  hibák felülvizsgálata |
 | A tesztelt folyamatok/funkciók/modulok leírása: |  Enemies, powerups, movement |
 | A tesztadatok típusa:  |  Megfelel/Nem felel meg |
 | A tesztelt rendszer beállításai:  | Standard |
 | A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
-| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek. Néha 1-1 blokkba beleakad a játékos, de ez nem befolyásolja a játékélményt. Az enemy-k megfelelően mozognak, ha hozzáér a játékos, game over, ha ráugrik megöli. a powerupok a szerepüket betöltik.  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek.|
 
 **Tesztelést elvégezte**
 
 |   |   |
 |---|---|
-|  Név: |   |
+|  Név: |  Komjati Evelin |
 |  Szervezeti egység/ beosztás: | Designer  |
-|  Dátum: |  2020.01.06 12:15  |
+|  Dátum: |  2021.01.06 12:15  |
 
 
 ### 6.3 Tesztelési jelentés - 3. 
 |   |   |
 |---|---|
-| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | Zene , Hang teszt |
-| A tesztelt folyamatok/funkciók/modulok leírása: |  Zene , Hang |
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | Login teszt |
+| A tesztelt folyamatok/funkciók/modulok leírása: |  Login teszt|
 | A tesztadatok típusa:  | Megfelel/Nem felel meg  |
 | A tesztelt rendszer beállításai:  | Standard  |
 | A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
@@ -314,25 +304,25 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 |---|---|
 |  Név: |  Donkó Róbert Márk |
 |  Szervezeti egység/ beosztás: |   |
-|  Dátum: |  2020.01.06 13:58  |
+|  Dátum: |  2021.01.06 13:58  |
 
 ### 6.4 Tesztelési jelentés - 4. 
 |   |   |
 |---|---|
-| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  |  |
-| A tesztelt folyamatok/funkciók/modulok leírása: |   |
-| A tesztadatok típusa:  | szöveg  |
-| A tesztelt rendszer beállításai:  |   |
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | CRUD műveletek |
+| A tesztelt folyamatok/funkciók/modulok leírása: |  CRUD műveletek |
+| A tesztadatok típusa:  | Megfelel/Nem felel meg  |
+| A tesztelt rendszer beállításai:  | Standard  |
 | A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
-| Megjegyzések:  | -  |
+| Megjegyzések:  | A tesztelt folyamatok az elvárt követelményeknek megfelelnek.   |
 
 **Tesztelést elvégezte**
 
 |   |   |
 |---|---|
-|  Név: |  név |
+|  Név: |  Kuborcik Ádám  |
 |  Szervezeti egység/ beosztás: |   |
-|  Dátum: |  2020.01.06 13:58  |
+|  Dátum: |  2021.01.06 13:58  |
 
 ### 7 Jóváhagyások
 
@@ -340,4 +330,4 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 |---|---|
 |  Név: |  Donkó Róbert Márk |
 |  Szervezeti egység/ beosztás: |   |
-|  Dátum: |  2020.01.07 11:00  |
+|  Dátum: |  2021.05.07 11:00  |
