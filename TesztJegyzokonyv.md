@@ -6,6 +6,7 @@
 |---|:-:|
 | **Minősítés: (állapot)**  |  Jóváhagyott |
 | **Verziószám:**  |  ALFA 0.1 |
+
 | **Projekt név:** | 404 könyvtár |
 | **Készítette:** | _404 |
 | **Utolsó mentés kelte:** | 2021.04.23 |
@@ -54,7 +55,6 @@ Tesztelés célja a projektben megtalálható struktúrális és design hibák f
 ### 2.3 Tesztadatok
 A teszt végrehajtásához szükséges rekordok (tesztadatok) száma: 3
 A tesztadatok elkészítéséért és feltöltéséért felelős személy: Donkó Róbert Márk
-
 A tesztadatoknak az alábbi követelményeknek kell megfelelniük:
 - Az adatbázisba felvitt adatoknak csak is az UTF-8 kódtáblában található karaktereket szabad tartalmaznia.
 
@@ -199,6 +199,7 @@ Az alábbi nem-funkcionális elvárások szerepelnek az üzleti illetve fejleszt
 
 |   |   |
 |---|---|
+
 | A teszt-eset leírás és célja:  | Login teszt |
 | A tesztelt folyamat/funkció leírása:  |  |
 | A tesztelés előfeltételei:  |  -  |

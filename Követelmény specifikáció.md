@@ -1,32 +1,44 @@
 # Követelmény specifikáció
 
 ## Áttekintés
-Az alkalmazásunk szórakozás céljából készül. Rendelkezik egy menüvel, amelyben nevet valamint karaktert és pályát választhatunk. A karaktereket saját magunk hoztuk létre, ugyanúgy, mint a pályákat. Adatbázisban tároljuk a szerzett pontokat, amelyek a pályán való haladás és az összegyűjtött szimbólumok alapján adódik össze. Ezeket a játék végén megjelenítjük egy táblázatban a játékos neve mellett, a többi játékos pontjaival csökkenő sorrendbe rendezve. 8 bites ábrázolással rendelkező asztali alkalmazás.
+Egy könyveket rendszerező adatbázison alapuló alkalmazást szeretnénk kialakítani.
 
 ## Jelenlegi helyzet
-Új játékokra mindig szükség van. Ha a felhasználóknak tetszik egy fajta játék, szeretnének találni olyan hasonló játékokat, amik csak elvben ugyanazok, de vannak újítások benne. Pl:
-- karakterekben
-- pályákban
-- pontozási módokban
-- összeszedhető tokenek/szimbólumokban való változtatások, melyektől a játék megváltozik, ettől újnak számít. A felhasználóknak mindig lesznek új és új igényeik, ezek létrehozása kielégíthetik az igényeiket. Fontos a játékok korszerűsítése és optimalizálása.
+Könyvekkel szeretnénk foglalkozni. Jelenleg ezek nyilvántartsa, rendszerezése táblázatos formában történik.
+A könyvekről tároljuk:
+- A szerzőjét
+- A címét
+- A műfaját
+- A kiadás évét
+- Rövid leírást
 
 ## Vágyálom Rendszer
-A project célja egy olyan rendszer, ami a szórakoztatást és kellemes időtöltést biztosítja.
-A rendszer **csak windows plaformon** lesz elérhető. A menü egy felhasználóbarát **3 pontos felület** lesz. A játékos a nevét megadva megkezdheti a játékot, ami egy **platformer-adventure orientált** környezetben történik. **2D-s**, **8-bites** grafikát szánunk a rendszernek, ami egy retrosabb hangulatot nyújt a felhasználónak. Természetesen látványosan és változatosan megoldva, hogy lekösse a játékos figyelmét. A játék fő célja, hogy az adott szintet a lehető leggyorsabban teljesítse, ergo eljusson A-ból B-be.a Ezt a teljesítményt **adatbázisban szeretnénk tárolni** a felhasználóval együtt és kialakítani egy jutalom rendszert a **futott idő alapján**, így a játékosok versenghetnek egymással. A pályákon az **ellenfelek** és a **csapdák** megnehezítik a játékos dolgát, ha egyszer is hozzájuk érünk, előlröl kell kezdeni. A további pályákat kizárólag az előző teljesítésével lehet feloldani, illetve a pálya értékelését láthatjuk az adott szintet mutató blokk, így nyomom lehet követni az eredményt.
+A projekt célja egy olyan webews felület kialakítása, amely megkönnyíti a korábbi munkát és 
+átláthatóbbá teszi az egész rendszert. Segíti a keresést a könyvek között, illetve gyorsítja az új könyvek felvitelét.
 
 ## Funkcionális követelmény
-A program az elindítás után, kér a felhasználótól egy nevet. Ha olyan nevet ad meg amivel már játszott a felhasználó, akkor egy menü fogja fogadni.
-Ha olyan nevet ad meg amivel még nem játszott, akkor a játék automatikusan elindul az első pályától. Minden pálya végén le lesz osztályozva a felhasználó teljesítménye. A pályák elkezdésénél egy timer indul, ami méri a pályák teljesítési idejét. Ez idő alapján kapja a felhasználó az osztályozást(1,2 vagy 3 csillag). A következő pálya csak az előző pálya teljesítése után lesz elérhető.
-A program adatbázisban tárolja az eddig elért eredményeket.  
+
+A program adatbázisban tárolja a könyveket.
+A kezelőfelülethez azonosítás után lehet hozzáférni, amihez egy felhasználónév és egy jelszó szükséges.
+Ezek az adatok szintén adatbázisban kerülnek elhelyezésre.
+
+A kezelő felület egy webes felület, amely segítségével:
+- meg lehet tekinteni az adatbázisban szerrepló összes könyv adatait
+- fel lehet vinni új könyveket
+- törölni lehet könyveket
+- módosítani lehet egy könyv adatait (pl. leírását)
+- lehet keresni cím, szerző vagy műfaj alapján
+
 Menüpontok:
-- pályaválsztás
-- karakterválsztás
-- beállítások
-- kilépés  
-Az eredmények és a pályaválasztás, a pályaválasztás menüpontnál található.  
-A karakterválsztás menüpontban két karakter közül lehet választani.
-A beállítások menüpontban a játék hangerejét lehet állítani.
-A kilépés menüpontot választva, bezárja a programot.
+- Könyvek listája
+- Hozzáadás
+- Törlés
+- módosítás
+- keresés
+- kilépés
+
+A kilépés menüpontot választva, a felhasználó kijelentkezik.
+
 
 ## Rendszerre vonatkozó törvények
 
@@ -57,18 +69,6 @@ Az Alkalmazáshoz kapcsolódó adatbázis módosítása kizárólag az Üzemelte
 
 Ha a Felhasználó az Alkalmazást használat közben bezárja, vagy ha a kapcsolat (bármely okból) megszakad a kiszolgáló webhelyével, abban az esetben az adatok elvesztéséért a Tulajdonos semmilyen felelősséget nem vállal. A Tulajdonos és az Üzemeltető a rendelkezésére álló eszközökkel biztosítja, hogy az Alkalmazás használata technikai szempontból biztonságosnak minősüljön. Az Alkalmazáshoz való csatlakozás miatt bekövetkező károkért, az internetes hálózat esetleges üzemkimaradásából, az elérési út hibájából, bármely nem várt technikai hibából eredő adatvesztésért, vírusból, vagy más károkért a Tulajdonos nem felelős. A Felhasználóknak minden esetben fel kell mérniük, hogy rendelkeznek-e az Alkalmazás használatához szükséges ismeretekkel, technikai követelményekkel és teljesítményekkel.
 
-
-### Technikai követelmények
-
-Az Alkalmazás használatához szükséges technikai feltételek: Windows XP operációs rendszer valamint minimum 100 MB szabad tárhely és a használathoz megfelelő sávszélességű internetelérés. A technikai feltételeket az Alkalmazás letöltéséhez és használatához a Felhasználónak kell teljesítenie. A technikai feltételek nem teljesüléséért a Tulajdonos nem vonható felelősségre. Ugyanígy nem vonható felelősségre a Tulajdonos az Alkalmazás használatából a készüléken bekövetkező adatvesztésért, meghibásodásért. A Tulajdonos kizár minden kártérítési felelősséget az Alkalmazáshoz csatlakozó minden külső szerver által nyújtott (kiemelten Facebook adatok átvétele) vagy megjelenített adattal, információval kapcsolatban is.
-
-Az Alkalmazás telepítéssel vehető használatba.
-
-### Garancia és kártérítés
-
-Az Alkalmazás használatához a felhasználói oldalon szükséges – fent meghatározott vagy bármely egyéb - technikai feltételeket a Felhasználónak kell biztosítania, teljesítenie. Ezen technikai feltételek nem teljesüléséért a Tulajdonos nem vonható felelősségre. Ugyanígy nem vonható felelősségre a Tulajdonos az Alkalmazás használatából adódóan, a készüléken bekövetkező adatvesztésért, meghibásodásért. A Tulajdonos kizár minden kártérítési felelősséget az Alkalmazáshoz csatlakozó minden külső szoftver által nyújtott (így kiemelten Facebook adatok átvétele) vagy megjelenített adattal, információval kapcsolatban. A Tulajdonos nem vállal garanciát az Alkalmazás megszakításmentes működéséért, valamint vis major hibákért. Az ebből eredő adatvesztésért, tartalom vesztésért a Tulajdonos szintén nem tartozik kártérítési felelősséggel.
-
-
 ### Egyéb rendelkezések
 
 Jelen Felhasználási Feltételekben nem szabályozott kérdésekben a hatályos jogszabályok – különösen, de nem kizárólagosan a Polgári Törvénykönyvről szóló 2013. évi V. törvény, az Európai Parlament és Tanács 2016. április 27-i (EU) 2016/679 Rendelete a természetes személyeknek a személyes adatok kezelése tekintetében történő védelméről és az ilyen adatok szabad áramlásáról, valamint a 95/46/EK irányelv hatályon kívül helyezéséről, az információs önrendelkezési jogról és az információ szabadságról szóló 2011. évi CXII. törvény, a szerzői jogról szóló 1999. évi LXXVI. törvény, valamint az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről szóló 2001. évi CVIII. törvény – rendelkezései az irányadóak.
@@ -80,29 +80,31 @@ Az Alkalmazás támogatását az Üzemeltető végzi munkanapokon, 9:00 és 17:0
 
 
 ## Jelenlegi üzleti folyamatok
-Mai világban nagy az igény a számítógépes játékokra kikapcsolódás gyanánt. Sajna a nagy játék kiadók elmentek egy olyan írányba hogy a minnél szebb játékot fejlesszenek , ezáltal háttérbe szorítva a történetet. Hatalmas igénybe merült fel az indi piac felé az egyszerű de igényes és jó történettel ellátot játékok felé . Mi ezt a piacot szeretnénk kiszolgálni ezzel a játékkal .
+
+A jelenlegi megoldás szerint a könyvek egy táblázatban vannak rendszerezve. Ebbe viszont körülményesebb a felvitel és nehéz
+a keresés is.
 
 ## Igényelt üzleti folyamatok
-A felhasználó az első indításkor meg kell addnia a játékos nevét ha van ilyen név már mentve akkor betölti az eddigi eredményeket ha nincs akkor létre lesz hozzva neki egy új mentés . Mentés betöltése után a egy egyszerű menüt láthatunk majd ahol ki lehet választani a pályákat , be lehet a zene hang erejét állítani és ki lehet lépni .
+
+A könyveket ezek után egy adatbázisban szeretnénk tárolni.
+Az alkalmazásban bejelentkzés után egyszerűen és átláthatóan lehet új könyveket felvinni az adatbázisba,
+illetve eltávolítani belőle.
+A keresés menüpont segítségével pedig különböző szempontok alapján lehet keresni címre, szerzőre és műfajra is.
+
 
 ## Követelménylista
 |    Modul    | ID |       Név        |                                                        Kifejtés                                                        |
 |-------------|----|------------------|------------------------------------------------------------------------------------------------------------------------|
-| Jogosultság | I1 | Belépési felület | A felhaszáló megadja a játékosnevét. Ha létezik, egy menü fogadja, ha nem, indul a játék automatikusan.                |
-|   Felület   | I2 | Pályaválasztás   | Főmenü pont, a játékos később innen tudja kiválasztani a következő pályát, vagy újrajátszani előzőt egy jobb időért.   |
-|   Felület   | I3 | Karakterválasztás| Főmenü pont, a játékos 2 karakter közül választhat számára megfelelőt.                                                 |
-|   Felület   | I4 | Kilépés          | Főmenü pont, a játékos kiléphet.                                                                                       |
-|   Felület   | I5 | Beállítások      | Főmenü pont, a játékos állíthatja a hangerőt.                                                                          |
-| Statisztika | I6 | Toplista         | A játékosok idejét, és pontszámát egy toplistán jelenítjük meg a szint teljesítése után.                               |
-| Statisztika | I7 | Adatbázis        | Itt tároljuk a játékos nevét, előrehaladását, pontszámát és idejét.                                                    |
-|   Feature   | I8 | Időszámláló      | Az időzítő egyből a pálya megkezdése után elindul, teljesítés után leáll.                                              |
+| Jogosultság | I1 | Belépési felület | A felhaszáló megadja a felhasználónevet és a jelszót. Ha megfelelő,, akkor a kezelőfelületet éri el.                   |
+|   Felület   | I2 | Könyvek listázása| Főmenü pont, az adatbázisban található összes könyv megjelenítése.                                                     | 
+|   Felület   | I3 | Hozzáadás        | Főmenü pont, új rekord felvitele.                                                                                      |
+|   Felület   | I4 | Törlés           | Főmenü pont, a kiválasztott könyv törlése az adatbázisból                                                              |
+|   Felület   | I5 | Módosítás        | Főmenü pont, a könyv leírásának módosítása.                                                                            |
+|   Felület   | I6 | Keresés          | Fő menüpont, különböző szempontok (cím, szerző, műfaj) alapján lehet szűrni a könyveket                                |
+|   Felület   | I7 | Kilépés          | Fő menüpont, a felhasználó kijelentkeztetése, visszatér a bejelentkező felülethez                                      |
+
 
 
 ## Fogalomtár 
 - Reszponzív felület: Mindig igazodik a felület a képerányhoz.
-- Beállítások: Itt lesz lehetőség a zene hangját állítani. 
-- Pálya választó: Itt lesz lehetőség a már fel oldott pályák végig vitelére.
-- Fel oldott pályák: egy pálya akkor lesz "feloldva" ha az elötte lévő szintet sikeresen meg csináltuk
-- Karakter választó: A felhasználónak lehetősége lesz 2 karakter között választani. 
-- Ellenfelek: Mozgó ellemek amiket ellkell kerülni azért vannak a játékban hogy nehezítsék a játékot .
-- Csapdák: Statikus ellenfelek akik nem mozognak fix pozícióban vannak.
+- Rekord: egy könyvhöz tartozó adatok összessége
