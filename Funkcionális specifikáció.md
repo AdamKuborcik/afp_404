@@ -32,3 +32,8 @@ A felhasználó jogosult regisztrálni, bejelentkezni, könyveket hozzáadni és
 
 ## Fogalomtár 
 - Reszponzív felület: Mindig igazodik a felület a képerányhoz.
+
+## Funkció-Követelmény megfeleltetés
+- **Modifikáció:** *-név:* A felhasználó saját profiljába belépve képes lesz módosítani az adatait.
+- **Statisztika:** *-könyvek:* Külön felület, amin a felhasználó láthatja az eddig elért eredményeket.
+- **Felület:** *-menü:* Menüpontok, ahol a felhasználó választhat .
