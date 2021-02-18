@@ -25,3 +25,7 @@ Az emberek igénye a versengés iránt mindig is magas volt. Fő célunk,hogy ez
 
 ## Használati esetek
 A felhasználó jogosult regisztrálni, bejelentkezni, könyveket hozzáadni és módosítani. Profilt módosítani és megtekinteni valamint profilt törölni.
+
+## A rendszer funkciói
+- Mentés: Elmenti a felhasználó adatait az adatbázisba. 
+- Betöltés: Betölti a felhasználó adatait, előrehaladását az adatbázisból.
