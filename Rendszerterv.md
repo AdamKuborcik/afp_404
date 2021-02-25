@@ -1,7 +1,7 @@
 # Rendszerterv
 
 ## A rendszer célja
-Az alkalmazásunk egy internetes könyvtárat reprezentál. Az webalkalmazásban lehetőség lesz regisztrálni, ami szükség lesz ahhoz, hogy az adott felhasználóhoz kössük, hogy ki melyik könyvet kölcsönözte ki. Bejelentkezés után lehetőségünk van böngészni a könyveink között, hozzáadni, valamint megjelölni hol tartunk egy adott könyvben. Adatbázisban tároljuk a felhasználókat, könyveket és az ezzel kapcsolatos adatokat is. Profilunkat publikusra is állíthatjuk, ezáltal más felhasználók is láthatják. Ez lehetővé teszi a felhasználóknak a versengést. 
+Az alkalmazásunk egy internetes könyvtárat reprezentál. Az webalkalmazásban lehetőség lesz regisztrálni, ami szükség lesz ahhoz, hogy az adott felhasználóhoz kössük, hogy ki melyik könyvet kölcsönözte ki. Bejelentkezés után lehetőségünk van böngészni a könyveink között, hozzáadni, valamint megjelölni hol tartunk egy adott könyvben. Adatbázisban tároljuk a felhasználókat, könyveket és az ezzel kapcsolatos adatokat is. Profilunkat publikusra is állíthatjuk, ezáltal más felhasználók is láthatják. 
 
 ## Projektterv
 **Résztvevők és főbb szerepköreik:**
