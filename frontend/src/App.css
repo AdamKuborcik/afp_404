@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -14,8 +15,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0d327c;
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  font-size: calc(10px + 2vmin);
+  text-align: right;
+  color: white;
+}
+
+.App-body {
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,8 +35,21 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #f5deb3;
 }
+
+.nav{
+  background-color: #031130;
+}
+.navlink{
+  display: inline-block;
+  background-color: lightskyblue;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Bradley Hand ITC";
+}
+
 
 @keyframes App-logo-spin {
   from {
