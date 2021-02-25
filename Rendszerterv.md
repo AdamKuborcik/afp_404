@@ -5,10 +5,10 @@ Az alkalmazásunk egy internetes könyvtárat reprezentál. Az webalkalmazásban
 
 ## Projektterv
 **Résztvevők és főbb szerepköreik:**
-**:** 
-**Donkó Márk:**
-**:**
-**:** 
+**Erdélyi Roland:Adatbázis fejlesző** 
+**Donkó Márk:Tesztelő**
+**Kuborcik Ádám:Backend fejlesző**
+**Komjati Evelin:Frontend fejlesző** 
 
 ## Üzleti folyamatok modellje
 A felhasználó az első indításkor meg kell addnia a játékos nevét ha van ilyen név már mentve akkor betölti az eddigi eredményeket ha nincs akkor létre lesz hozzva neki egy új mentés . Mentés betöltése után a egy egyszerű menüt láthatunk majd ahol ki lehet választani a pályákat , be lehet a zene hang erejét állítani és ki lehet lépni.
