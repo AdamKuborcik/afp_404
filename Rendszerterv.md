@@ -1,7 +1,7 @@
 # Rendszerterv
 
 ## A rendszer célja
-A rendszer célja a folyamatosan újuló igények kielégítése valamint a játékok izgalmasságának fenntartása. A játékos választhat pályát, melyek egyre nehezednek, váratlan események történhetnek, így ha végig akarják játszani a játékot akkor fejleszteniük kell a reakcióidejüket valamint a memóriájukat(pl egy hosszúpályánál), megoldóképességüket. Nem célunk webes vagy telefonos felületre is implementálni a játékot, csak asztali alkalmazásként szeretnénk futhatóvá tenni. A játékosok pontokat szereznek a pálya százalékos teljesítése és a felszedett szimbólumok függvényében, amiket toplistán megjelenítünk. A rendszer az adatokat (pl a toplistához) az adatbázisból kapjuk.  
+Az alkalmazásunk egy internetes könyvtárat reprezentál. Az webalkalmazásban lehetőség lesz regisztrálni, ami szükség lesz ahhoz, hogy az adott felhasználóhoz kössük, hogy ki melyik könyvet kölcsönözte ki. Bejelentkezés után lehetőségünk van böngészni a könyveink között, hozzáadni, valamint megjelölni hol tartunk egy adott könyvben. Adatbázisban tároljuk a felhasználókat, könyveket és az ezzel kapcsolatos adatokat is. Profilunkat publikusra is állíthatjuk, ezáltal más felhasználók is láthatják. Ez lehetővé teszi a felhasználóknak a versengést. 
 
 ## Projektterv
 **Résztvevők és főbb szerepköreik:**
