@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab15d13-0f50-4bb6-806d-91c8dca02e05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/element/_Router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/views/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/element/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/element/_Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/element/_Router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +67,7 @@
       <updated>1614245370898</updated>
       <workItem from="1614245372081" duration="692000" />
       <workItem from="1614247294373" duration="645000" />
-      <workItem from="1614847558447" duration="1453000" />
+      <workItem from="1614847558447" duration="2143000" />
     </task>
     <servers />
   </component>

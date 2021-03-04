@@ -6,12 +6,14 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import NavBar from "./NavBar";
 
 class _Router extends React.Component {
     render(){
         return(
             <Router>
                 <div>
+                    <NavBar/>
                     <Switch>
                         <Route exact path="/">
                             <Home />
