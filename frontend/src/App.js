@@ -1,6 +1,6 @@
 import './App.css';
 
-import _Router from "./component/element/_Router.js"
+import _Router from "./components/elements/_Router.js"
 import React from "react";
 
 function App() {
