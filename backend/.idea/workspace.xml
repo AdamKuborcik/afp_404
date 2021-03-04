@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f34db24-b161-4192-82b3-6aef49afdbef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/Button.js" afterDir="false" />
-    </list>
+    <list default="true" id="2f34db24-b161-4192-82b3-6aef49afdbef" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +22,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.5" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.31" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -37,6 +36,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614245450733</updated>
       <workItem from="1614245451941" duration="614000" />
+      <workItem from="1614247264469" duration="625000" />
     </task>
     <servers />
   </component>
@@ -53,5 +53,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
