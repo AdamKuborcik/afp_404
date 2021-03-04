@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Card, Col, Form} from "react-bootstrap";
+import {Button, Form} from "react-bootstrap";
 
 class RegPage extends React.Component {
 
@@ -20,58 +20,53 @@ class RegPage extends React.Component {
 
     render() {
         return (
-            <Card className="border border-dark bg-dark text-white">
-            <Card.Header>
 
-            </Card.Header>
             <Form>
-                <Card.Body>
+
                     <Form.Row>
-                        <Form.Group as={Col} controlId={"formGridUserName"}>
+                        <Form.Group  controlId={"formGridUserName"}>
                             <Form.Label>User Name</Form.Label>
                             <Form.Control required autoComplete="off"
                                           name="userName"
                                           type="text"
                                           value={this.state.userName}
                                           onChange={this.formOnChange}
-                                          className="bg-dark text-white"
+                                          pattern="[A-Z a-z 0-9]*"
                                           placeholder="Enter username"/>
                         </Form.Group>
                     </Form.Row>
                     <Form.Row>
-                        <Form.Group as={Col} controlId={"formGridEmail"}>
+                        <Form.Group controlId={"formGridEmail"}>
                             <Form.Label>Email</Form.Label>
                             <Form.Control required autoComplete="off"
                                           name="email"
                                           type="email"
                                           value={this.state.email}
                                           onChange={this.formOnChange}
-                                          className="bg-dark text-white"
                                           placeholder="Enter Email"/>
                         </Form.Group>
                     </Form.Row>
                     <Form.Row>
-                        <Form.Group as={Col} controlId={"formGridPasswd"}>
+                        <Form.Group  controlId={"formGridPasswd"}>
                             <Form.Label>Password</Form.Label>
                             <Form.Control required autoComplete="off"
                                           name="passwd"
                                           type="password"
                                           value={this.state.passwd}
                                           onChange={this.formOnChange}
-                                          className="bg-dark text-white"
+                                          pattern="[A-Z a-z 0-9]*"
                                           placeholder="Enter Password"/>
                         </Form.Group>
                     </Form.Row>
-                </Card.Body>
-                <Card.Footer>
+
+
                     <Button
                         disabled={this.state.email.length === 0 ||  this.state.userName === 0 || this.state.passwd === 0}
                         size={"sm"} variant="success" type="submit" >
                         Submit
                     </Button>
-                </Card.Footer>
-            </Form>
-        </Card>);
+
+            </Form>);
     }
 }
 export default RegPage
