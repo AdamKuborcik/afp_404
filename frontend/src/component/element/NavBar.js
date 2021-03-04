@@ -7,7 +7,7 @@ class NavBar extends React.Component
         return(
             <Navbar className="navbar">
                 <Nav>
-                    <Nav.Link className="navlink" href="#home">Home</Nav.Link>
+                    <Nav.Link className="navlink" to={"Home"}>Home</Nav.Link>
                     <Nav.Link className="navlink" href="#link">Link</Nav.Link>
                     <Nav.Link className="navlink" href="#link1">Link1</Nav.Link>
                     <Nav.Link className="navlink" href="#link2">Link2</Nav.Link>
