@@ -7,6 +7,7 @@ import {
     Link
 } from "react-router-dom";
 import NavBar from "./NavBar";
+import RegPage from "../views/RegPage";
 
 class _Router extends React.Component {
     render(){
@@ -17,6 +18,9 @@ class _Router extends React.Component {
                     <Switch>
                         <Route exact path="/">
                             <Home />
+                        </Route>
+                        <Route exact path="/register">
+                            <RegPage />
                         </Route>
                     </Switch>
                 </div>
