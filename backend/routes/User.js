@@ -7,6 +7,21 @@ const mongodb = require('mongodb');
 
 
 //Find one element
+router.get('/findOne',function (req,res) {
+    req.on('data', function(name) {
+        let query = { username: name};
+        MongoClient.connect(url,function (err,db) {
+            if(err) throw err;
+            let dbo=db.db("mydb");
+            dbo.collection("Users").findOne(query,function (err,result) {
+                if (err) throw err;
+                console.log(result);
+                db.close();
+                res.send(result);
+            })
+        })
+    })
+});
 //Add one element
 
 
