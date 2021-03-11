@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const MongoClient =require('mongodb').MongoClient;
-const url = "mongodb+srv://momsz:yaKLfIBPPeaFb332@cluster0.apeyl.mongodb.net/myDatabase?retryWrites=true&w=majority"
+const url = "mongodb+srv://user1:4VUnYWQAUO8daRVB@cluster0.apeyl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const mongodb = require('mongodb');
+
 
 /* GET element listing. */
 //List All
