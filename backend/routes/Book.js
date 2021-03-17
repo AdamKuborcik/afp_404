@@ -15,7 +15,7 @@ router.get('/findOne',function (req,res) {
         MongoClient.connect(url,function (err,db) {
             if(err) throw err;
             let dbo=db.db("mydb");
-            dbo.collection("Employee").find({_id:id}).toArray(function (err,result) {
+            dbo.collection("Book").find({_id:id}).toArray(function (err,result) {
                 if (err) throw err;
                 console.log(result);
                 db.close();
@@ -26,6 +26,18 @@ router.get('/findOne',function (req,res) {
 });
 //Add one element
 //Update one element
-
+router.put('/update',function (req,res) {
+    console.log(req.body)
+    let ObjectID = require('mongodb').ObjectID;
+    MongoClient.connect(url,function (err,db){
+        if(err) throw err;
+        let dbo=db.db("mydb");
+        dbo.collection("Book").updateOne({"_id": ObjectID(req.body._id)},{$set:req.body.data} ,function (err,result) {
+            if (err) throw err;
+            db.close();
+        })
+        res.status(200).send('OK')
+    });
+})
 
 module.exports = router;
