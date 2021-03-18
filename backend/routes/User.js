@@ -25,6 +25,17 @@ router.get('/findOne',function (req,res) {
     })
 });
 //Add one element
-
+router.post('/add',(req ,res)=>{
+    MongoClient.connect(url,function (err,db) {
+        if (err) throw err;
+        let dbo=db.db("mydb");
+        dbo.collection("Users").insertOne(req.body,function (err,res) {
+            if(err)throw err;
+            console.log(res.insertedCount+" Elem beillesztve az adatbázisba")
+            db.close();
+        })
+    })
+    res.status(200).send();
+})
 
 module.exports = router;
