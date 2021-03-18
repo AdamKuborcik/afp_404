@@ -33,7 +33,19 @@ class LoginPage extends React.Component {
                                       placeholder="Please enter your email address:"/>
                     </Form.Group>
                 </Form.Row>
-                
+                <Form.Row>
+                    <Form.Group  controlId={"formGridLoginPasswd"}>
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control required autoComplete="off"
+                                      name="passwd"
+                                      type="password"
+                                      value={this.state.passwd}
+                                      onChange={this.formOnChange}
+                                      pattern="[A-Z a-z 0-9]*"
+                                      placeholder="Please enter your password:"/>
+                    </Form.Group>
+                </Form.Row>
+
 
             </Form>);
     }
