@@ -45,6 +45,11 @@ class LoginPage extends React.Component {
                                       placeholder="Please enter your password:"/>
                     </Form.Group>
                 </Form.Row>
+                <Button
+                    disabled={this.state.email.length === 0 ||  this.state.passwd === 0}
+                    size={"sm"} variant="success" type="submit" >
+                    Submit
+                </Button>
 
 
             </Form>);
