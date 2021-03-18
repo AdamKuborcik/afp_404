@@ -11,17 +11,14 @@ Az alkalmazásunk egy internetes könyvtárat reprezentál. Az webalkalmazásban
 **Komjati Evelin:Frontend fejlesző** 
 
 ## Üzleti folyamatok modellje
-A felhasználó az első indításkor meg kell addnia a játékos nevét ha van ilyen név már mentve akkor betölti az eddigi eredményeket ha nincs akkor létre lesz hozzva neki egy új mentés . Mentés betöltése után a egy egyszerű menüt láthatunk majd ahol ki lehet választani a pályákat , be lehet a zene hang erejét állítani és ki lehet lépni.
+A felhasználó az első indításkor meg kell addnia a felhasználó nevét ha van ilyen név már mentve akkor betölti a könyveket, majd bejelentkezés után lehetőségünk van böngészni a könyveink között, hozzáadni, valamint megjelölni hol tartunk egy adott könyvben. Adatbázisban tároljuk a felhasználókat, könyveket és az ezzel kapcsolatos adatokat is. 
 
 ## Követelmények
 **Funkcionális követelmények:**
 	- Felhasználó nevének tárolása
-	- Felhasználó pontszámának tárolása
 	- Felhasználó idejének tárolása
-	- Felhasználó in-game progress-ének tárolása
-	- Főmenü kezelhetősége
-	- Toplista
-	- Időszámláló
+	- Felhasználó kibérelt könyveinek tárolása
+	- Könyvek tárolása
 
 **Nem funkcionális követelmények:**
 	- Letisztult, felhasználóbarát felület
@@ -43,10 +40,10 @@ A felhasználó az első indításkor meg kell addnia a játékos nevét ha van 
 	- 2001. évi CVIII. törvény
 
 ## Architekturális terv
-A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. Az asztali program JavaFX keretrendszer használatával készül el. Bejelentkezés után elérhetőek lesznek az eddig elért eredmények.  
+A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. Az asztali program Vue.js keretrendszer használatával készül el. Bejelentkezés után elérhetőek lesznek az eddig elért eredmények.  
 
 ## Implementációs terv
-### Windows Desktop Application  
+### Webalkalmazás 
 Az alkalmazás felhasználói oldalát asztali alkalmazásnak tervezzük. A terv a JAVA nyelv használatát írja elő, főleg mert ismerős és könnyen használható.
 ### Adatbázis  
 A tervezett szolgáltatás jellegét tekintve egy központi adatbázis használata elengedhetetlen. A felhasználók, és azok adatainak rögzítése, tárolása és rendszerezése céljából a modern adatbáziskezelés konvenciói a legcélravezetőbbek. Arra, hogy ezeket implementálhassuk, a MySQL rendszerét választottuk, az ismeretségeink tudatában, és a megbízhatóság fényében.  
