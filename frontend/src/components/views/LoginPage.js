@@ -22,6 +22,18 @@ class LoginPage extends React.Component {
 
             <Form>
 
+                <Form.Row>
+                    <Form.Group controlId={"formGridLoginEmail"}>
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control required autoComplete="off"
+                                      name="email"
+                                      type="email"
+                                      value={this.state.email}
+                                      onChange={this.formOnChange}
+                                      placeholder="Please enter your email address:"/>
+                    </Form.Group>
+                </Form.Row>
+                
 
             </Form>);
     }
