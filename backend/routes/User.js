@@ -31,7 +31,7 @@ router.post('/add',(req ,res)=>{
         let dbo=db.db("mydb");
         dbo.collection("Users").insertOne(req.body,function (err,res) {
             if(err)throw err;
-            console.log(res.insertedCount+" Elem beillesztve az adatbázisba")
+            console.log(res.insertedCount+" Felhasználó hozzáadva")
             db.close();
         })
     })
