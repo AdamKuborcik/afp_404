@@ -9,7 +9,7 @@ class NavBar extends React.Component
                 <Nav>
                     <Nav.Link className="navlink" href="/">Home</Nav.Link>
                     <Nav.Link className="navlink" href="/register">Register</Nav.Link>
-                    <Nav.Link className="navlink" href="#link1">Link1</Nav.Link>
+                    <Nav.Link className="navlink" href="/login">Login</Nav.Link>
                     <Nav.Link className="navlink" href="#link2">Link2</Nav.Link>
                 </Nav>
             </Navbar>
