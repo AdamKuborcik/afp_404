@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a85bc7a-f1a8-42d9-97ad-0fc60374708b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/elements/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/elements/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/Book.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/components/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -63,6 +64,7 @@
       <updated>1616055069203</updated>
       <workItem from="1616055073811" duration="304000" />
       <workItem from="1616056720296" duration="582000" />
+      <workItem from="1616663408666" duration="857000" />
     </task>
     <servers />
   </component>
@@ -79,5 +81,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
