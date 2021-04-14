@@ -20,12 +20,13 @@ class RegPage extends React.Component {
 
     render() {
         return (
-
+            <body  className="App-body">
+            <div className={"loginForm"}>
             <Form>
 
                     <Form.Row>
                         <Form.Group  controlId={"formGridUserName"}>
-                            <Form.Label>User Name</Form.Label>
+                            <Form.Label> User Name </Form.Label>
                             <Form.Control required autoComplete="off"
                                           name="userName"
                                           type="text"
@@ -37,7 +38,7 @@ class RegPage extends React.Component {
                     </Form.Row>
                     <Form.Row>
                         <Form.Group controlId={"formGridEmail"}>
-                            <Form.Label>Email</Form.Label>
+                            <Form.Label> Email </Form.Label>
                             <Form.Control required autoComplete="off"
                                           name="email"
                                           type="email"
@@ -48,7 +49,7 @@ class RegPage extends React.Component {
                     </Form.Row>
                     <Form.Row>
                         <Form.Group  controlId={"formGridPasswd"}>
-                            <Form.Label>Password</Form.Label>
+                            <Form.Label> Password </Form.Label>
                             <Form.Control required autoComplete="off"
                                           name="passwd"
                                           type="password"
@@ -66,7 +67,9 @@ class RegPage extends React.Component {
                         Submit
                     </Button>
 
-            </Form>);
+            </Form>
+            </div>
+            </body>);
     }
 }
 export default RegPage

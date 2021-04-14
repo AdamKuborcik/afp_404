@@ -56,7 +56,8 @@
   display: flex;
   background-color:lightskyblue;
   width:30vw;
-  height:15vh;
+  min-height:15vh;
+  padding: 5px;
   text-align:center;
   vertical-align: center;
   justify-content: center;
