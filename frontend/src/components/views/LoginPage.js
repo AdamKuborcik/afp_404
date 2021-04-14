@@ -19,12 +19,13 @@ class LoginPage extends React.Component {
 
     render() {
         return (
-
+            <body  className="App-body">
+            <div className={"loginForm"}>
             <Form>
 
                 <Form.Row>
                     <Form.Group controlId={"formGridLoginEmail"}>
-                        <Form.Label>Email</Form.Label>
+                        <Form.Label> Email </Form.Label>
                         <Form.Control required autoComplete="off"
                                       name="email"
                                       type="email"
@@ -35,7 +36,7 @@ class LoginPage extends React.Component {
                 </Form.Row>
                 <Form.Row>
                     <Form.Group  controlId={"formGridLoginPasswd"}>
-                        <Form.Label>Password</Form.Label>
+                        <Form.Label> Password </Form.Label>
                         <Form.Control required autoComplete="off"
                                       name="passwd"
                                       type="password"
@@ -52,7 +53,9 @@ class LoginPage extends React.Component {
                 </Button>
 
 
-            </Form>);
+            </Form>
+         </div>
+            </body>);
     }
 }
 export default LoginPage

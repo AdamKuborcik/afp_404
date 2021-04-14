@@ -26,6 +26,7 @@
 }
 
 .App-body {
+  background-color: darkgrey;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -50,6 +51,22 @@
   text-decoration: none;
   font-family: "Bradley Hand ITC";
 }
+
+.loginForm{
+  display: flex;
+  background-color:lightskyblue;
+  width:30vw;
+  height:15vh;
+  text-align:center;
+  vertical-align: center;
+  justify-content: center;
+  border:2pt solid darkblue;
+}
+
+.loginForm Form{
+  text-align:left;
+}
+
 
 
 @keyframes App-logo-spin {
