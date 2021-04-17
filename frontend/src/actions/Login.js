@@ -2,12 +2,21 @@ import axios from 'axios';
 import BookDispatcher from '../dispatcher/BookDispatcher';
 import * as actionConstants from '../dispatcher/ActionConstans'
 
-export const Login = ({email,password}) => {
+export const Login = ({email,passwd}) => {
     axios.defaults.timeout = 1500;
-    axios.get('/login').then((resp) => {
-        BookDispatcher.dispatch({
-            action: actionConstants.refresh,
-            payload: resp.data
+    axios.post('/login',
+        {
+            email: email,
+            passwd:passwd
         })
-    })
+        .then(() => {
+            BookDispatcher.dispatch({action: actionConstants.clearError});
+        })
+        .catch((err) => {
+            BookDispatcher.dispatch({
+                action: actionConstants.showError,
+                payload: `${err.response.status}-${err.response.statusText}: ${err.response.data.message}`
+            });
+
+        });
 }
