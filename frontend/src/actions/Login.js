@@ -1,16 +1,20 @@
 import axios from 'axios';
 import BookDispatcher from '../dispatcher/BookDispatcher';
 import * as actionConstants from '../dispatcher/ActionConstans'
+import * as resp from "mongodb";
 
 export const Login = ({email,passwd}) => {
     axios.defaults.timeout = 1500;
     axios.post('/login',
         {
             email: email,
-            passwd:passwd
+            passwd: passwd
         })
         .then(() => {
-            BookDispatcher.dispatch({action: actionConstants.clearError});
+            BookDispatcher.dispatch({
+                action: actionConstants.refresh,
+                payload: resp.data
+            })
         })
         .catch((err) => {
             BookDispatcher.dispatch({
