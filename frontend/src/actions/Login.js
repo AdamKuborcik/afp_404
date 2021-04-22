@@ -1,5 +1,5 @@
 import axios from 'axios';
-import BookDispatcher from '../dispatcher/BookDispatcher';
+import LoginDispatcher from '../dispatcher/LoginDispatcher';
 import * as actionConstants from '../dispatcher/ActionConstans'
 import * as resp from "mongodb";
 
@@ -11,13 +11,13 @@ export const Login = ({email,passwd}) => {
             passwd: passwd
         })
         .then(() => {
-            BookDispatcher.dispatch({
+            LoginDispatcher.dispatch({
                 action: actionConstants.refresh,
                 payload: resp.data
             })
         })
         .catch((err) => {
-            BookDispatcher.dispatch({
+            LoginDispatcher.dispatch({
                 action: actionConstants.showError,
                 payload: `${err.response.status}-${err.response.statusText}: ${err.response.data.message}`
             });
