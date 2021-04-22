@@ -1,5 +1,5 @@
 import {Dispatcher} from 'flux'
 
-const  LoginDispatcher =new Dispatcher();
+const  RegDispatcher =new Dispatcher();
 
-export  default LoginDispatcher;
+export  default RegDispatcher;
