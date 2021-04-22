@@ -1,5 +1,5 @@
 import axios from 'axios';
-import BookDispatcher from '../dispatcher/BookDispatcher';
+import RegDispatcher from '../dispatcher/RegDispatcher';
 import * as actionConstants from '../dispatcher/ActionConstans'
 import * as resp from "mongodb";
 
@@ -12,13 +12,13 @@ export const Reg = ({userName,email,passwd}) => {
             passwd: passwd
         })
         .then(() => {
-            BookDispatcher.dispatch({
+            RegDispatcher.dispatch({
                 action: actionConstants.refresh,
                 payload: resp.data
             })
         })
         .catch((err) => {
-            BookDispatcher.dispatch({
+            RegDispatcher.dispatch({
                 action: actionConstants.showError,
                 payload: `${err.response.status}-${err.response.statusText}: ${err.response.data.message}`
             });
