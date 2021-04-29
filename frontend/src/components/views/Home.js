@@ -5,17 +5,12 @@ class Home extends React.Component {
         return(
             <body  className="App-body">
             <img src={logo} className="App-logo" alt="logo" />
+            <h1>Üdvözöljük!</h1>
+            <h2>Ez az alkalmazás a _404 navű afp csoport projektje</h2>
             <p>
-                Opening page
+                A projekt a könyvek egy adatbázisát kezeli
             </p>
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Learn React
-            </a>
+
             </body>
         )
     }
