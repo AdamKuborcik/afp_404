@@ -8,8 +8,7 @@ import {
     Link
 } from "react-router-dom";
 import NavBar from "./NavBar";
-import RegPage from "../views/RegPage";
-import LoginPage from "../views/LoginPage";
+import DeleteBookPage from "../views/DeleteBookPage";
 
 class _Router extends React.Component {
     render(){
@@ -24,8 +23,8 @@ class _Router extends React.Component {
                         <Route exact path="/update">
                             <ModifyBookPage />
                         </Route>
-                        <Route exact path="/login">
-                            <LoginPage />
+                        <Route exact path="/delete">
+                            <DeleteBookPage />
                         </Route>
 
 
