@@ -2,7 +2,7 @@ import axios from 'axios';
 import BookDispatcher from '../dispatcher/BookDispatcher';
 import * as actionConstants from '../dispatcher/ActionConstans'
 
-export const deletBook = ({id}) =>{
+export const DeleteBook = ({id}) =>{
     axios.delete('/delete/'+id)
         .then(() => {
             BookDispatcher.dispatch({action : actionConstants.clearError});
