@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "../views/Home";
+import ModifyBookPage from "../views/ModifyBookPage";
 import {
     BrowserRouter as Router,
     Switch,
@@ -20,8 +21,8 @@ class _Router extends React.Component {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route exact path="/register">
-                            <RegPage />
+                        <Route exact path="/update">
+                            <ModifyBookPage />
                         </Route>
                         <Route exact path="/login">
                             <LoginPage />

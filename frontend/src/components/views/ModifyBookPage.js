@@ -5,18 +5,9 @@ import * as Yup from "yup";
 import {Formik} from "formik";
 import {ModifyBook} from "../../actions/ModifyBook";
 
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)'
-    }
-};
 
-class ModifyBook extends React.Component {
+
+class ModifyBookPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -51,15 +42,14 @@ class ModifyBook extends React.Component {
                     isOpen={this.state.showModal}
                     ariaHideApp={false}
                     contentLabel="Add employee"
-                    style={customStyles}
                 >
                     <div className="card-body text-center">
                         <h5 className="card-title">Modify employee's userdata</h5>
-                        <h6 className="card-subtitle mb-2 text-muted">#ID:{this.state.user.modifyID}</h6>
+                        <h6 className="card-subtitle mb-2 text-muted">#ID:{this.state.modifyID}</h6>
                         <Formik
                             initialValues={{
-                                author: this.state.book.author, title: this.state.book.title,
-                                genre:this.state.book.genre, modifyID: this.state.book.modifyID
+                                author: this.state.author, title: this.state.title,
+                                genre:this.state.genre, modifyID: this.state.modifyID
                             }}
                             onSubmit={(values, {setSubmitting}) => {
                                 setTimeout(() => {
@@ -154,4 +144,4 @@ class ModifyBook extends React.Component {
     }
 }
 
-export default ModifyBook
+export default ModifyBookPage
