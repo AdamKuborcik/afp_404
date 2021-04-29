@@ -5,7 +5,16 @@ import * as Yup from "yup";
 import {Formik} from "formik";
 import {ModifyBook} from "../../actions/ModifyBook";
 
-
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)'
+    }
+};
 
 class ModifyBookPage extends React.Component {
     constructor(props) {
@@ -26,6 +35,7 @@ class ModifyBookPage extends React.Component {
         this.handleCloseModal = this.handleCloseModal.bind(this);
     }
 
+
     handleOpenModal() {
         this.setState({showModal: true});
     }
@@ -42,6 +52,7 @@ class ModifyBookPage extends React.Component {
                     isOpen={this.state.showModal}
                     ariaHideApp={false}
                     contentLabel="Add book"
+                    style={customStyles}
                 >
                     <div className="card-body text-center">
                         <h5 className="card-title">Modify book's data</h5>

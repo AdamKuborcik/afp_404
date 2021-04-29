@@ -4,6 +4,16 @@ import {Button} from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {DeleteBook} from "../../actions/DeleteBook";
 
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)'
+    }
+};
 
 class DeleteBookPage extends React.Component {
     constructor(props) {
@@ -42,7 +52,7 @@ class DeleteBookPage extends React.Component {
                     ariaHideApp={false}
                     isOpen={this.state.showModal}
                     contentLabel="Delete book"
-
+                    style={customStyles}
                 >
                     <div>
                         <div className="card-body text-center">
