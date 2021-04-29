@@ -41,10 +41,10 @@ class ModifyBookPage extends React.Component {
                 <ReactModal
                     isOpen={this.state.showModal}
                     ariaHideApp={false}
-                    contentLabel="Add employee"
+                    contentLabel="Add book"
                 >
                     <div className="card-body text-center">
-                        <h5 className="card-title">Modify employee's userdata</h5>
+                        <h5 className="card-title">Modify book's data</h5>
                         <h6 className="card-subtitle mb-2 text-muted">#ID:{this.state.modifyID}</h6>
                         <Formik
                             initialValues={{
@@ -81,7 +81,7 @@ class ModifyBookPage extends React.Component {
                                 return (
                                     <form onSubmit={handleSubmit}>
                                         <div className="form-group">
-                                            <label htmlFor="name">Name</label>
+                                            <label htmlFor="author">Author</label>
                                             <input
                                                 name="author"
                                                 type="text"
@@ -96,7 +96,7 @@ class ModifyBookPage extends React.Component {
                                             )}
                                         </div>
                                         <div className={"form-group"}>
-                                            <label htmlFor="address">Address</label>
+                                            <label htmlFor="title">Title</label>
                                             <input
                                                 name="title"
                                                 type="text"
@@ -111,7 +111,7 @@ class ModifyBookPage extends React.Component {
                                             )}
                                         </div>
                                         <div className={"form-group"}>
-                                            <label htmlFor="dateOfBirth">Date of birth</label>
+                                            <label htmlFor="genre">Genre</label>
                                             <input
                                                 name="genre"
                                                 type="text"
