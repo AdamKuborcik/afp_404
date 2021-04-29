@@ -43,8 +43,115 @@ class ModifyBook extends React.Component {
         this.setState({showModal: false});
     }
 
+    render() {
+        return (
+            <div>
+                <Button onClick={this.handleOpenModal} className={"btn btn-success"}>Modify Book</Button>
+                <ReactModal
+                    isOpen={this.state.showModal}
+                    ariaHideApp={false}
+                    contentLabel="Add employee"
+                    style={customStyles}
+                >
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Modify employee's userdata</h5>
+                        <h6 className="card-subtitle mb-2 text-muted">#ID:{this.state.user.modifyID}</h6>
+                        <Formik
+                            initialValues={{
+                                author: this.state.book.author, title: this.state.book.title,
+                                genre:this.state.book.genre, modifyID: this.state.book.modifyID
+                            }}
+                            onSubmit={(values, {setSubmitting}) => {
+                                setTimeout(() => {
+                                    ModifyBook(values);
+                                    this.setState({showModal: false})
+                                    setSubmitting(false);
+                                }, 500);
+                            }}
 
-
+                            validationSchema={Yup.object().shape({
+                                author: Yup.string()
+                                    .required(),
+                                title: Yup.string()
+                                    .required(),
+                                genre: Yup.date()
+                                    .required()
+                            })}
+                        >
+                            {props => {
+                                const {
+                                    values,
+                                    touched,
+                                    errors,
+                                    isSubmitting,
+                                    handleChange,
+                                    handleBlur,
+                                    handleSubmit
+                                } = props;
+                                return (
+                                    <form onSubmit={handleSubmit}>
+                                        <div className="form-group">
+                                            <label htmlFor="name">Name</label>
+                                            <input
+                                                name="author"
+                                                type="text"
+                                                placeholder="Author name"
+                                                value={values.author}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.author && touched.author? "form-control is-invalid" : "form-control"}
+                                            />
+                                            {errors.author && touched.author && (
+                                                <div className={"invalid-feedback"}>{errors.author} </div>
+                                            )}
+                                        </div>
+                                        <div className={"form-group"}>
+                                            <label htmlFor="address">Address</label>
+                                            <input
+                                                name="title"
+                                                type="text"
+                                                placeholder="Title"
+                                                value={values.title}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.title && touched.title ? "form-control is-invalid" : "form-control"}
+                                            />
+                                            {errors.title && touched.title && (
+                                                <div className={"invalid-feedback"}>{errors.title}</div>
+                                            )}
+                                        </div>
+                                        <div className={"form-group"}>
+                                            <label htmlFor="dateOfBirth">Date of birth</label>
+                                            <input
+                                                name="genre"
+                                                type="text"
+                                                placeholder="Genre of book"
+                                                value={values.genre}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.genre && touched.genre ? "form-control is-invalid" : "form-control"}
+                                            />
+                                            {errors.genre && touched.genre && (
+                                                <div className={"invalid-feedback"}>{errors.genre}</div>
+                                            )}
+                                        </div>
+                                        <p className="card-text">This book will be modified!</p>
+                                        <button type="submit" disabled={isSubmitting}
+                                                className={"btn btn-success card-link"}>
+                                            Modify
+                                        </button>
+                                        <button onClick={this.handleCloseModal} className={"btn btn-primary card-link"}>
+                                            Cancel
+                                        </button>
+                                    </form>
+                                );
+                            }}
+                        </Formik>
+                    </div>
+                </ReactModal>
+            </div>
+        );
+    }
 }
 
 export default ModifyBook
