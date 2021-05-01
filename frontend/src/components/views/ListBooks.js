@@ -31,7 +31,7 @@ class ListBooks extends React.Component {
     render() {
         return (
             <div>
-                {this.state._Books.map(({_id, author, title, genre}, index) => {
+                {this.state.books.map(({_id, author, title, genre}, index) => {
                     return (
                         <ListElement key={_id} id={_id} author={author} title={title} genre={genre}/>
                     );
