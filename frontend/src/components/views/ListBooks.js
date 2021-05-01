@@ -1,8 +1,8 @@
 
 import React from 'react'
 import ListElement from "./ListElement";
-import GetBooks from '../actions/GetBooks';
-import BookStore from "../store/BookStore";
+import {GetBooks} from '../../actions/GetBooks';
+import BookStore from "../../store/BookStore";
 
 class ListBooks extends React.Component {
     constructor(props) {

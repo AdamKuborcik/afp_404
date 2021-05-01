@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import NavBar from "./NavBar";
 import DeleteBookPage from "../views/DeleteBookPage";
+import ListBooks from "../views/ListBooks";
 
 class _Router extends React.Component {
     render(){
@@ -26,7 +27,9 @@ class _Router extends React.Component {
                         <Route exact path="/delete">
                             <DeleteBookPage />
                         </Route>
-
+                        <Route exact path={"/list"}>
+                            <ListBooks/>
+                        </Route>
 
                     </Switch>
                 </div>
