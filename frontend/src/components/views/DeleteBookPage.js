@@ -46,6 +46,7 @@ class DeleteBookPage extends React.Component {
 
     render() {
         return (
+            <body  className="App-body">
             <div>
                 <Button onClick={this.handleOpenModal} className={"btn btn-danger"}>Delete employee</Button>
                 <ReactModal
@@ -68,6 +69,7 @@ class DeleteBookPage extends React.Component {
                     </div>
                 </ReactModal>
             </div>
+            </body>
         );
     }
 }

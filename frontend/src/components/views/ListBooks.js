@@ -30,6 +30,7 @@ class ListBooks extends React.Component {
 
     render() {
         return (
+            <body  className="App-body">
             <div>
                 {this.state.books.map(({_id, author, title, genre}, index) => {
                     return (
@@ -37,6 +38,7 @@ class ListBooks extends React.Component {
                     );
                 })}
             </div>
+            </body>
         )
     }
 }

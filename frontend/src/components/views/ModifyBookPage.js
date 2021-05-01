@@ -16,6 +16,8 @@ const customStyles = {
     }
 };
 
+
+
 class ModifyBookPage extends React.Component {
     constructor(props) {
         super(props);
@@ -46,6 +48,7 @@ class ModifyBookPage extends React.Component {
 
     render() {
         return (
+           <body  className="App-body">
             <div>
                 <Button onClick={this.handleOpenModal} className={"btn btn-success"}>Modify Book</Button>
                 <ReactModal
@@ -91,6 +94,21 @@ class ModifyBookPage extends React.Component {
                                 } = props;
                                 return (
                                     <form onSubmit={handleSubmit}>
+                                        <div className="form-group">
+                                            <label htmlFor="id">ID</label>
+                                            <input
+                                                name="modifyID"
+                                                type="text"
+                                                placeholder="Book ID"
+                                                value={values.modifyID}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.modifyID && touched.modifyID? "form-control is-invalid" : "form-control"}
+                                            />
+                                            {errors.modifyID && touched.modifyID  && (
+                                                <div className={"invalid-feedback"}>{errors.modifyID } </div>
+                                            )}
+                                        </div>
                                         <div className="form-group">
                                             <label htmlFor="author">Author</label>
                                             <input
@@ -151,6 +169,7 @@ class ModifyBookPage extends React.Component {
                     </div>
                 </ReactModal>
             </div>
+            </body>
         );
     }
 }
