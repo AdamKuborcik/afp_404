@@ -17,6 +17,18 @@ router.get('/getAll', function(req, res, next) {
     })
 });
 //Delete in id
+router.delete('/delete',function (req,res) {
+    MongoClient.connect(url,function (err,db){
+        if(err) throw err;
+        let dbo=db.db("mydb");
+        dbo.collection("Book").deleteOne(req.body,function (err,result) {
+            if (err) throw err;
+            console.log(result.insertedCount+" elem törölve");
+            db.close();
+        })
+    })
+    res.status(200).send();
+});
 //Find one element
 router.get('/findOne',function (req,res) {
     req.on('data', function(chunk) {
