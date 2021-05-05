@@ -57,8 +57,8 @@ class DeleteBookPage extends React.Component {
                 >
                     <div>
                         <div className="card-body text-center">
-                            <h5 className="card-title">Delete this book: {this.state.author}</h5>
-                            <h6 className="card-subtitle mb-2 text-muted">#ID:{this.state.title}</h6>
+                            <h5 className="card-title">Delete this book:</h5>
+                            <h6 className="card-subtitle mb-2 text-muted">#ID:{this.state.deleteID}</h6>
                             <p className="card-text">This book will be permanently deleted!</p>
                             <button onClick={() => this.handleClick(this.state.deleteID)} className={"btn btn-danger card-link"}>Delete
                             </button>
