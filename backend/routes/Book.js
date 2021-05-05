@@ -5,6 +5,17 @@ const url = "mongodb+srv://user1:4VUnYWQAUO8daRVB@cluster0.apeyl.mongodb.net/myF
 const mongodb = require('mongodb');
 
 //List All
+router.get('/listbooks', function(req, res, next) {
+    MongoClient.connect(url,function (err,db){
+        if(err) throw err;
+        let dbo=db.db("mydb");
+        dbo.collection("Book").find({}).toArray(function (err,result) {
+            if (err) throw err;
+            db.close();
+            res.send(result);
+        })
+    })
+});
 //Delete in id
 //Find one element
 router.get('/findOne',function (req,res) {
