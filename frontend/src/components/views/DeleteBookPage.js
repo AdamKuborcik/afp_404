@@ -48,7 +48,7 @@ class DeleteBookPage extends React.Component {
         return (
             <body  className="App-body">
             <div>
-                <Button onClick={this.handleOpenModal} className={"btn btn-danger"}>Delete employee</Button>
+                <Button onClick={this.handleOpenModal} className={"btn btn-danger"}>Delete Book</Button>
                 <ReactModal
                     ariaHideApp={false}
                     isOpen={this.state.showModal}

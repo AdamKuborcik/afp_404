@@ -78,7 +78,7 @@ class ModifyBookPage extends React.Component {
                                     .required(),
                                 title: Yup.string()
                                     .required(),
-                                genre: Yup.date()
+                                genre: Yup.string()
                                     .required()
                             })}
                         >

@@ -6,9 +6,9 @@ class ListElement extends React.Component {
         this.state = {
             element: {
                 id: this.props.id,
-                name: this.props.author,
-                address: this.props.title,
-                birthDate: this.props.genre
+                author: this.props.title,
+                title: this.props.author,
+                genre: this.props.genre
             }
         }
     }
