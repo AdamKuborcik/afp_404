@@ -3,7 +3,7 @@ import BookDispatcher from '../dispatcher/BookDispatcher';
 import * as actionConstants from '../dispatcher/ActionConstans'
 
 export const DeleteBook = ({id}) =>{
-    axios.delete('/delete/'+id)
+    axios.delete('book/delete/'+id)
         .then(() => {
             BookDispatcher.dispatch({action : actionConstants.clearError});
         })
