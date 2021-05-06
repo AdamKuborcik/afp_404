@@ -34,11 +34,11 @@ router.get('/findOne',function (req,res) {
     req.on('data', function(chunk) {
         let stringToJson=chunk.toString();
         let json =JSON.parse(stringToJson);
-        let id=new mongodb.ObjectID(json["_id"]);
+        let id=new mongodb.ObjectID(json["id"]);
         MongoClient.connect(url,function (err,db) {
             if(err) throw err;
             let dbo=db.db("mydb");
-            dbo.collection("Book").find({_id:id}).toArray(function (err,result) {
+            dbo.collection("Book").find({id:id}).toArray(function (err,result) {
                 if (err) throw err;
                 console.log(result);
                 db.close();
@@ -48,6 +48,18 @@ router.get('/findOne',function (req,res) {
     })
 });
 //Add one element
+router.post('/add',(req ,res)=>{
+    MongoClient.connect(url,function (err,db) {
+        if (err) throw err;
+        let dbo=db.db("mydb");
+        dbo.collection("Book").insertOne(req.body,function (err,res) {
+            if(err)throw err;
+            console.log(res.insertedCount+"Könyv hozzáadva")
+            db.close();
+        })
+    })
+    res.status(200).send();
+})
 //Update one element
 router.put('/update',function (req,res) {
     console.log(req.body)
@@ -55,7 +67,7 @@ router.put('/update',function (req,res) {
     MongoClient.connect(url,function (err,db){
         if(err) throw err;
         let dbo=db.db("mydb");
-        dbo.collection("Book").updateOne({"_id": ObjectID(req.body._id)},{$set:req.body.data} ,function (err,result) {
+        dbo.collection("Book").updateOne({"id": req.body.id},{$set:req.body.data} ,function (err,result) {
             if (err) throw err;
             db.close();
         })
