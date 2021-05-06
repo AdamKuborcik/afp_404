@@ -3,7 +3,7 @@ import {Formik} from "formik";
 import * as Yup from "yup";
 import {AddBook} from "../../actions/AddBook";
 
-export const AddBookPage  = () => ( <Formik
+export const AddBookPage  = () => (   <body  className="App-body"><div><Formik
     initialValues={{author: "",title: "", genre:""}}
     onSubmit={(values, {setSubmitting}) => {
         setTimeout(() => {
@@ -34,7 +34,7 @@ export const AddBookPage  = () => ( <Formik
         } = props;
         return (
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
+
                     <label htmlFor="author">Author's name:</label>
                     <input
                         name="author"
@@ -48,8 +48,8 @@ export const AddBookPage  = () => ( <Formik
                     {errors.author && touched.author && (
                         <div className={"invalid-feedback"}>{errors.author} </div>
                     )}
-                </div>
-                <div className={"form-group"}>
+
+
                     <label htmlFor="title">Title:</label>
                     <input
                         name="title"
@@ -63,8 +63,8 @@ export const AddBookPage  = () => ( <Formik
                     {errors.title && touched.title && (
                         <div className={"invalid-feedback"}>{errors.title}</div>
                     )}
-                </div>
-                <div className={"form-group"}>
+
+
                     <label htmlFor="genre">Genre:</label>
                     <input
                         name="genre"
@@ -78,11 +78,11 @@ export const AddBookPage  = () => ( <Formik
                     {errors.genre && touched.genre && (
                         <div className={"invalid-feedback"}>{errors.genre}</div>
                     )}
-                </div>
+
                 <button type="submit" disabled={isSubmitting} className={"btn btn-primary"}>
                     Add Book
                 </button>
             </form>
         );
     }}
-</Formik>);
+</Formik></div> </body>);
