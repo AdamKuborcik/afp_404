@@ -18,7 +18,7 @@ export const AddBook = (value) => {
         })
         .catch((error) => {
                 console.log(error);
-                dispatcher.dispatch(
+                BookDispatcher.dispatch(
                     {
                         action: actionConstants.showError,
                         payload: null
