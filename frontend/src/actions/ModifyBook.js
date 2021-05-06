@@ -6,7 +6,7 @@ export const ModifyBook = (value) => {
     axios.defaults.timeout = 1500;
     axios.put('/book/update',
         {
-            id:value.modifyID,
+            _id:value.modifyID,
             data: {
                 author: value.author,
                 title: value.title,

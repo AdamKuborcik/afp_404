@@ -1,5 +1,5 @@
 import {EventEmitter} from 'events'
-import dispatcher from "../dispatcher/BookDispatcher";
+import BookDispatcher from "../dispatcher/BookDispatcher";
 import {refresh} from '../dispatcher/ActionConstans';
 
 class BookStore extends EventEmitter {
@@ -21,7 +21,7 @@ class BookStore extends EventEmitter {
 const store = new BookStore();
 export default store;
 
-dispatcher.register(({action,payload})=>{
+BookDispatcher.register(({action,payload})=>{
     if(action !== refresh ) return;
     store._Books = payload;
     store.emitChange();
