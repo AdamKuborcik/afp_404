@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "../views/Home";
+import ModifyBookPage from "../views/ModifyBookPage";
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,8 +8,8 @@ import {
     Link
 } from "react-router-dom";
 import NavBar from "./NavBar";
-import RegPage from "../views/RegPage";
-import LoginPage from "../views/LoginPage";
+import DeleteBookPage from "../views/DeleteBookPage";
+import ListBooks from "../views/ListBooks";
 
 class _Router extends React.Component {
     render(){
@@ -20,13 +21,15 @@ class _Router extends React.Component {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route exact path="/register">
-                            <RegPage />
+                        <Route exact path="/update">
+                            <ModifyBookPage />
                         </Route>
-                        <Route exact path="/login">
-                            <LoginPage />
+                        <Route exact path="/delete">
+                            <DeleteBookPage />
                         </Route>
-
+                        <Route exact path={"/list"}>
+                            <ListBooks/>
+                        </Route>
 
                     </Switch>
                 </div>

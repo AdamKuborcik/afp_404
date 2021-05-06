@@ -22,18 +22,31 @@
   min-height: 10vh;
   font-size: calc(10px + 2vmin);
   text-align: right;
-  color: white;
+  color: #ffffff;
 }
 
 .App-body {
-  background-color: darkgrey;
+  background-image: url("backgrnd.jpg");
+  background-size: cover;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #031130;
+}
+
+.App-body div {
+  background-color: hsla(224, 71%, 35%,0.5);
+  min-width: 50vw;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
 }
 
 .App-link {
@@ -67,7 +80,6 @@
 .loginForm Form{
   text-align:left;
 }
-
 
 
 @keyframes App-logo-spin {
