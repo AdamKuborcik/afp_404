@@ -1,4 +1,6 @@
 import React from 'react';
+import DeleteBookPage from "./DeleteBookPage";
+import ModifyBookPage from "./ModifyBookPage";
 
 class ListElement extends React.Component {
     constructor(props) {
@@ -18,7 +20,7 @@ class ListElement extends React.Component {
             <div className={"col pb-5"}>
                 <div className={"card text-center"}>
                     <div className={"card-header"}>
-                      Book #ID: {this.state.element.id}
+                        Book #ID: {this.state.element.id}
                     </div>
                     <div className={"card-body"}>
                         <div className="container">
@@ -33,12 +35,20 @@ class ListElement extends React.Component {
                                     <p className={"card-text"}>{this.state.element.genre}</p>
                                 </div>
 
-
+                                <div className="col-sm">
+                                    <DeleteBookPage deleteID={this.state.element.id} />
+                                </div>
+                                <div className="col-sm">
+                                    <ModifyBookPage title={this.state.element.title} author={this.state.element.author}
+                                                   genre={this.state.element.genre}
+                                                   modifyID={this.state.element.id}/>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         );
     }
 }
