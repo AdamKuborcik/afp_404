@@ -11,7 +11,7 @@ class NavBar extends React.Component
                     <Nav.Link className="navlink" href="/">Home</Nav.Link>
                     <Nav.Link className="navlink" href="/update">Módosítás</Nav.Link>
                     <Nav.Link className="navlink" href="/delete">Törlés</Nav.Link>
-                    <Nav.Link className="navlink" href="/">Hozzáadás</Nav.Link>
+                    <Nav.Link className="navlink" href="/add">Hozzáadás</Nav.Link>
                     <Nav.Link className="navlink" href="/list">Listázás</Nav.Link>
                 </Nav>
             </Navbar>

@@ -2,7 +2,7 @@
 
 ## Áttekintés
 
-Az alkalmazásunk egy projektmunka keretein belül készült. Egy "könyvespolc" webes felületét hivatott reprezentálni. Rendelkezik egy regisztrációs/bejelentkezési felülettel. Bejelentkezés után lehetőségünk van böngészni a könyveink között, hozzáadni, valamint megjelölni hol tartunk egy adott könyvben. Adatbázisban tároljuk a felhasználókat, könyveket és az ezzel kapcsolatos adatokat is. Profilunkat publikusra is állíthatjuk, ezáltal más felhasználók is láthatják. Ez lehetővé teszi a felhasználóknak a versengést.
+Az alkalmazásunk egy projektmunka keretein belül készült. Egy "könyvespolc" webes felületét hivatott reprezentálni. Lehetőségünk van böngészni a könyveink között, hozzáadni, módosítani valamint törölni.
 
 ## Jelenlegi helyzet
 A szükség, ami ösztönzött minket hogy implementáljuk ezt a reszponzív felületes webes alkalmazást a felhasználók változó és újuló igényei. 
@@ -11,7 +11,6 @@ A könyvekről tároljuk:
 - A szerzőjét
 - A címét
 - A műfaját
-- A kiadás évét
 - Rövid leírást
 
 ## Követelménylista

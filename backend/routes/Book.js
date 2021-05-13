@@ -48,6 +48,18 @@ router.get('/findOne',function (req,res) {
     })
 });
 //Add one element
+router.post('/add',(req ,res)=>{
+    MongoClient.connect(url,function (err,db) {
+        if (err) throw err;
+        let dbo=db.db("mydb");
+        dbo.collection("Book").insert(req.body,function (err,res) {
+            if(err)throw err;
+            console.log(res.insertedCount+"Könyv hozzáadva")
+            db.close();
+        })
+    })
+    res.status(200).send();
+})
 //Update one element
 router.put('/update',function (req,res) {
     console.log(req.body)

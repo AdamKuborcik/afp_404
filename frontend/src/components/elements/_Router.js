@@ -10,6 +10,7 @@ import {
 import NavBar from "./NavBar";
 import DeleteBookPage from "../views/DeleteBookPage";
 import ListBooks from "../views/ListBooks";
+import {AddBookPage} from "../views/AddBookPage";
 
 class _Router extends React.Component {
     render(){
@@ -30,7 +31,9 @@ class _Router extends React.Component {
                         <Route exact path={"/list"}>
                             <ListBooks/>
                         </Route>
-
+                        <Route exact path={"/add"}>
+                            <AddBookPage/>
+                        </Route>
                     </Switch>
                 </div>
             </Router>
